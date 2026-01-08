@@ -28,6 +28,7 @@
         <module>module5-testing</module>
         <module>classic-problems</module>
         <module>projects</module>
+        <module>lld-concurrency</module>
     </modules>
 
     <dependencyManagement>

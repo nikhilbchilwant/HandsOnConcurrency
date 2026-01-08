@@ -69,7 +69,8 @@ All skeleton files include pedagogical comments:
 ├── module4-liveness-production/ # Labs 15-17: Deadlock, shutdown, debugging
 ├── module5-testing/           # Labs 18-20: Stress testing, race detection
 ├── classic-problems/          # 10 prioritized interview problems
-└── projects/                  # 3 capstone projects
+├── projects/                  # 3 capstone projects
+└── lld-concurrency/           # LLD + Concurrency interview problems
 ```
 
 ## Classic Problems by Tier
@@ -91,3 +92,13 @@ All skeleton files include pedagogical comments:
 
 ### 🟢 Tier 4: Java Specifics
 - Double-Checked Locking Singleton
+
+## LLD + Concurrency Problems
+
+These combine OOP class design with thread-safety requirements - exactly what SDE2 interviews test:
+
+| Problem | Concurrency Challenge | Similar To |
+|---------|----------------------|------------|
+| **Seat Booking System** | Prevent double-booking (CAS) | BookMyShow, movie tickets |
+| **Parking Lot** | Multiple gates, atomic allocation | Classic LLD problem |
+| **Pub-Sub System** | Concurrent publishers/subscribers | Mini-Kafka, event systems |
