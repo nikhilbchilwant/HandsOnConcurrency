@@ -27,11 +27,9 @@
         <module>module3-executors-async</module>   <!-- Labs 11-14, 21: Executors, CF, Fork/Join -->
         <module>module4-liveness-production</module> <!-- Labs 15-17: Deadlock, Shutdown, Debugging -->
         <module>module5-testing</module>           <!-- Labs 18-20: Stress, Race Detection -->
-        
-        <!-- Practice Problems (after completing modules) -->
-        <module>classic-problems</module>          <!-- Tier 1-4: Interview classics -->
-        <module>projects</module>                  <!-- Capstone: Pipeline, Orchestrator, Scheduler -->
-        <module>lld-concurrency</module>           <!-- LLD+Concurrency: Booking, Parking, PubSub -->
+        <module>module6-classic-problems</module>  <!-- Tier 1-4: Interview classics -->
+        <module>module7-capstone</module>          <!-- Capstone: Pipeline, Orchestrator, Scheduler -->
+        <module>module8-lld-concurrency</module>   <!-- LLD+Concurrency: Booking, Parking, PubSub -->
     </modules>
 
     <dependencyManagement>

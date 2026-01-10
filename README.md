@@ -36,9 +36,9 @@ Go through modules in order - each builds on the previous:
 | 3 | module3-executors-async | 11-14, 21 | Executors, CompletableFuture, Fork/Join, Fan-Out/Fan-In |
 | 4 | module4-liveness-production | 15-17 | Deadlock, graceful shutdown, debugging |
 | 5 | module5-testing | 18-20 | Stress testing, race detection |
-| 6 | classic-problems | Tier 1-4 | Interview classics (Queue, Cache, Pool, etc.) |
-| 7 | projects | 1-3 | Capstone: Pipeline, Orchestrator, Scheduler |
-| 8 | lld-concurrency | 3 problems | LLD + Concurrency: Booking, Parking, PubSub |
+| 6 | module6-classic-problems | Tier 1-4 | Interview classics (Queue, Cache, Pool, etc.) |
+| 7 | module7-capstone | 1-3 | Capstone: Pipeline, Orchestrator, Scheduler |
+| 8 | module8-lld-concurrency | 3 problems | LLD + Concurrency: Booking, Parking, PubSub |
 
 ### 🎯 Interview-Priority Path (If Time is Short)
 

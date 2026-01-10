@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>projects</artifactId>
-    <name>Capstone Projects</name>
+    <artifactId>module7-capstone</artifactId>
+    <name>Module 7: Capstone Projects</name>
     <description>Integration projects combining multiple concurrency concepts</description>
 </project>

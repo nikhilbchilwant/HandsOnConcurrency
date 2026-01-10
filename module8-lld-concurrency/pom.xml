@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>lld-concurrency</artifactId>
-    <name>LLD + Concurrency Problems</name>
+    <artifactId>module8-lld-concurrency</artifactId>
+    <name>Module 8: LLD + Concurrency Problems</name>
     <description>Low-Level Design problems with concurrency requirements - interview focused</description>
 </project>

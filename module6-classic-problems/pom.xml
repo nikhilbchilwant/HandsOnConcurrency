@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>classic-problems</artifactId>
-    <name>Classic Concurrency Interview Problems</name>
+    <artifactId>module6-classic-problems</artifactId>
+    <name>Module 6: Classic Concurrency Interview Problems</name>
     <description>Priority-ordered interview problems by concurrency muscle</description>
 </project>
