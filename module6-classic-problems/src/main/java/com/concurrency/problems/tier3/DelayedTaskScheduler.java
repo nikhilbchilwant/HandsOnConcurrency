@@ -8,19 +8,35 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Classic Problem #9: Delayed Task Scheduler
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ ✅ INTERVIEW RELEVANCE: HIGH PRIORITY │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ Companies: Rubrik, Uber, Amazon │
+ * │ Frequency: HIGH - Common Rubrik system coding question │
+ * │ Time Target: Implement from scratch in < 30 minutes │
+ * │ │
+ * │ WHY THIS IS CRITICAL: │
+ * │ - Tests PriorityQueue + threading + time management │
+ * │ - Must avoid busy-waiting (use Condition.awaitNanos) │
+ * │ - Common follow-up: "What happens when a new earlier task arrives?" │
+ * │ │
+ * │ INTERVIEW TIP: Explain the "wake up when new task might be earlier" │
+ * │ pattern - this shows deep understanding. │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * TODO: Implement a scheduler that executes tasks after a delay.
  * 
  * 📝 NOTE: Similar to ScheduledExecutorService but built from scratch.
  * 
  * Key components:
- *   1. PriorityQueue ordered by execution time
- *   2. Worker thread that waits for the next task
- *   3. Condition.awaitNanos() for efficient waiting
+ * 1. PriorityQueue ordered by execution time
+ * 2. Worker thread that waits for the next task
+ * 3. Condition.awaitNanos() for efficient waiting
  * 
  * ⚠️ AVOID: Busy waiting! Don't poll the queue in a tight loop.
  * 
  * 💡 THINK: How to wait efficiently?
- *   Calculate time until next task, then wait exactly that long.
+ * Calculate time until next task, then wait exactly that long.
  */
 public class DelayedTaskScheduler {
     

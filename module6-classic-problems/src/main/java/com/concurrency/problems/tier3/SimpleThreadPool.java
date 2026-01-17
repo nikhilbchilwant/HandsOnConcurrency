@@ -8,26 +8,42 @@ import java.util.concurrent.LinkedBlockingQueue;
 /**
  * Classic Problem #8: Custom Thread Pool
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ ✅ INTERVIEW RELEVANCE: HIGH PRIORITY │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ Companies: Uber, Amazon, Dropbox │
+ * │ Frequency: HIGH - Tests understanding of Executor framework │
+ * │ Time Target: Implement from scratch in < 30 minutes │
+ * │ │
+ * │ WHY THIS IS CRITICAL: │
+ * │ - Foundation for understanding ThreadPoolExecutor │
+ * │ - Tests BlockingQueue + Worker thread pattern │
+ * │ - Common follow-up: "How would you implement shutdown?" │
+ * │ │
+ * │ INTERVIEW TIP: Mention rejection policies (CallerRunsPolicy, etc.) │
+ * │ as a follow-up to show production awareness. │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * TODO: Implement a fixed-size thread pool from scratch.
  * 
  * 📝 NOTE: This is how java.util.concurrent.ThreadPoolExecutor works!
  * Understanding this helps you configure thread pools correctly.
  * 
  * Components needed:
- *   1. A BlockingQueue to hold submitted tasks
- *   2. A fixed number of Worker threads
- *   3. Each Worker loops forever, taking tasks from the queue
+ * 1. A BlockingQueue to hold submitted tasks
+ * 2. A fixed number of Worker threads
+ * 3. Each Worker loops forever, taking tasks from the queue
  * 
  * 💡 THINK: Why use a BlockingQueue instead of a regular Queue?
- *   - BlockingQueue.take() blocks when empty (no busy waiting!)
- *   - BlockingQueue.put() can block when full (backpressure)
+ * - BlockingQueue.take() blocks when empty (no busy waiting!)
+ * - BlockingQueue.put() can block when full (backpressure)
  * 
  * ⚠️ AVOID: Busy waiting!
- *   // BAD - wastes CPU cycles
- *   while (queue.isEmpty()) { // spin }
- *   
- *   // GOOD - thread sleeps until item available
- *   task = queue.take();
+ * // BAD - wastes CPU cycles
+ * while (queue.isEmpty()) { // spin }
+ * 
+ * // GOOD - thread sleeps until item available
+ * task = queue.take();
  */
 public class SimpleThreadPool {
     

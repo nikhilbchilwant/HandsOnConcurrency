@@ -5,6 +5,27 @@ import java.util.concurrent.atomic.AtomicReference;
 /**
  * Lab 07: Compare-And-Swap (CAS) Operations
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 📚 INTERVIEW RELEVANCE: ACADEMIC / STAFF+ LEVEL                        │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ Companies: Rarely asked at SDE2. May appear at Staff/Principal level   │
+ * │            at companies like Google, Meta for infrastructure roles.    │
+ * │ Frequency: LOW for SDE2 interviews                                     │
+ * │                                                                        │
+ * │ WHY THIS IS BOOKISH:                                                   │
+ * │ - Lock-free programming requires deep understanding of memory models  │
+ * │ - Most interviewers expect lock-based solutions first                  │
+ * │ - The ABA problem (covered here) is very niche                        │
+ * │                                                                        │
+ * │ WHEN TO MENTION IN INTERVIEW:                                          │
+ * │ - As a follow-up optimization: "If we need higher throughput, we      │
+ * │   could consider a lock-free approach using CAS..."                   │
+ * │ - Shows depth, but implement lock-based solution FIRST                │
+ * │                                                                        │
+ * │ RECOMMENDED: Master BlockingQueue and ReentrantLock first. Return to  │
+ * │              this lab only if you have extra time.                    │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * TODO: Implement a lock-free stack using CAS.
  * 
  * 📝 NOTE: CAS is the foundation of lock-free data structures!

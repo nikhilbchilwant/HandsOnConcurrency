@@ -3,23 +3,42 @@ package com.concurrency.problems.tier3;
 /**
  * Classic Problem #7: Token Bucket Rate Limiter
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ ✅ INTERVIEW RELEVANCE: HIGH PRIORITY │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ Companies: Rubrik, Amazon, Stripe, Cloudflare, any API company │
+ * │ Frequency: HIGH - Common in system design AND coding rounds │
+ * │ Time Target: Implement from scratch in < 25 minutes │
+ * │ │
+ * │ WHY THIS IS CRITICAL: │
+ * │ - Every API needs rate limiting │
+ * │ - Tests time-based reasoning + thread safety │
+ * │ - Common follow-up: "How would you make this distributed?" │
+ * │ │
+ * │ INTERVIEW PROGRESSION: │
+ * │ 1. Start with single-threaded Token Bucket │
+ * │ 2. Add synchronized for thread safety │
+ * │ 3. Discuss Sliding Window as alternative │
+ * │ 4. Discuss distributed rate limiting (Redis + Lua scripts) │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * TODO: Implement a rate limiter using the Token Bucket algorithm.
  * 
  * 📝 NOTE: Token Bucket works like this:
- *   - Bucket has a maximum capacity of tokens
- *   - Tokens are added at a fixed rate (e.g., 10 per second)
- *   - Each request consumes one token
- *   - If no tokens available, request is rejected (or blocked)
+ * - Bucket has a maximum capacity of tokens
+ * - Tokens are added at a fixed rate (e.g., 10 per second)
+ * - Each request consumes one token
+ * - If no tokens available, request is rejected (or blocked)
  * 
  * ⚠️ AVOID: Using a background thread to add tokens every second!
- *   This is inefficient and adds unnecessary complexity.
+ * This is inefficient and adds unnecessary complexity.
  * 
  * 💡 THINK: Use LAZY REFILL instead!
- *   When a request arrives, calculate how many tokens SHOULD have been
- *   added since the last request based on elapsed time.
- *   
- *   tokensToAdd = (currentTime - lastRefillTime) * refillRate
- *   availableTokens = min(capacity, availableTokens + tokensToAdd)
+ * When a request arrives, calculate how many tokens SHOULD have been
+ * added since the last request based on elapsed time.
+ * 
+ * tokensToAdd = (currentTime - lastRefillTime) * refillRate
+ * availableTokens = min(capacity, availableTokens + tokensToAdd)
  * 
  * This is how production rate limiters work (Guava RateLimiter, etc.)
  */

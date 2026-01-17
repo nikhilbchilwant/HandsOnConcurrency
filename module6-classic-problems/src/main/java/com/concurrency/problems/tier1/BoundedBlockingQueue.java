@@ -3,23 +3,41 @@ package com.concurrency.problems.tier1;
 /**
  * Classic Problem #1: Bounded Blocking Queue (with wait/notify)
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ ✅ INTERVIEW RELEVANCE: HIGH PRIORITY │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ Companies: Rubrik, Dropbox, Amazon, Uber, Google │
+ * │ Frequency: VERY HIGH - Asked in 70%+ of concurrency interviews │
+ * │ Time Target: Implement from scratch in < 20 minutes │
+ * │ │
+ * │ WHY THIS IS CRITICAL: │
+ * │ - Tests fundamental understanding of wait/notify │
+ * │ - Exposes common mistakes (if vs while, notify vs notifyAll) │
+ * │ - Foundation for Producer-Consumer pattern │
+ * │ - Rubrik asks this exact problem in system coding rounds │
+ * │ │
+ * │ INTERVIEW TIP: Implement this version first (wait/notify), then │
+ * │ mention "I could also implement this with ReentrantLock + Condition │
+ * │ for better flexibility" as a follow-up. │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * This is THE most important concurrency problem for interviews!
  * 
  * TODO: Implement a thread-safe bounded queue that:
- *   - Blocks on put() when full
- *   - Blocks on take() when empty
- *   - Supports multiple producers and consumers
+ * - Blocks on put() when full
+ * - Blocks on take() when empty
+ * - Supports multiple producers and consumers
  * 
  * ⚠️ CRITICAL: Common mistakes to avoid:
- *   1. Using IF instead of WHILE for wait conditions (spurious wakeups!)
- *   2. Using notify() instead of notifyAll() (wrong thread might wake up!)
- *   3. Forgetting to handle InterruptedException properly
+ * 1. Using IF instead of WHILE for wait conditions (spurious wakeups!)
+ * 2. Using notify() instead of notifyAll() (wrong thread might wake up!)
+ * 3. Forgetting to handle InterruptedException properly
  * 
  * 💡 THINK: After implementing this version, implement another using
- *   ReentrantLock + Condition for comparison. Which is cleaner?
+ * ReentrantLock + Condition for comparison. Which is cleaner?
  * 
  * 📝 NOTE: In production, use java.util.concurrent.ArrayBlockingQueue!
- *   This exercise is for learning the fundamentals.
+ * This exercise is for learning the fundamentals.
  * 
  * @param <E> element type
  */
