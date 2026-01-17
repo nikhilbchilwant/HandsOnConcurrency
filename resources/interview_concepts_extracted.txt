@@ -1,0 +1,309 @@
+================================================================================
+INTERVIEW-RELEVANT CONCEPTS FROM THE ART OF MULTIPROCESSOR PROGRAMMING
+================================================================================
+
+
+============================================================
+CHAPTER 1: Introduction, Amdahl's Law
+Pages: 21-38
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • speedup: 18 occurrences
+  • Amdahl: 13 occurrences
+  • starvation: 9 occurrences
+  • deadlock: 7 occurrences
+  • CAS: 7 occurrences
+  • starvation-free: 7 occurrences
+  • atomic: 5 occurrences
+  • parallelism: 4 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] processors (cores) on a single chip communicate directly through shared hardware caches. Multicore chips make computing more effective by exploiting parallelism: harnessing multiple circuits to work on a single task. The spread of multiprocessor architectures has had a pervasive effect on how we dev...
+
+  [2] time. In this century, however, that free ride has come to an end. Today, advances in technology bring regular increases in parallelism, but only minor increases in clock speed. Exploiting that parallelism is one of the outstanding challenges of modern computer science. This book focuses on how to p...
+
+  [3] technology bring regular increases in parallelism, but only minor increases in clock speed. Exploiting that parallelism is one of the outstanding challenges of modern computer science. This book focuses on how to program multiprocessors that communicate via a shared memory. Such systems are often ca...
+
+📄 CHAPTER PREVIEW:
+  1 CHAPTER Introduction At the dawn of the twenty-rst century, the computer industry underwent yet an- other revolution. The major chip manufacturers had increasingly been unable to make processor chips both smaller and faster. As Moores law approached the end of its 50-year reign, manufacturers turned to multicore architectures, in which multiple processors (cores) on a single chip communicate directly through shared hardware caches. Multicore chips make computing more effective by exploiting parallelism: harnessing multiple circuits to work on a single task. The spread of multiprocessor architectures has had a pervasive effect on how we develop software. During the twentieth century, advances in technology brought reg- ular increases in clock speed, so software would effectively speed up ...
+
+============================================================
+CHAPTER 2: Mutual Exclusion - 2.1-2.4, 2.7, 2.9
+Pages: 39-65
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • deadlock: 39 occurrences
+  • starvation: 24 occurrences
+  • lock-free: 24 occurrences
+  • starvation-free: 19 occurrences
+  • livelock: 10 occurrences
+  • CAS: 9 occurrences
+  • fair: 6 occurrences
+  • wait-free: 5 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] At most one thread holds the lock at any time. Freedom from deadlock If a thread is attempting to acquire or release the lock (i.e., it invoked lock() or unlock() and has not returned), then eventually some thread acquires or releases the lock (i.e., it returns from invoking lock() or...
+
+  [2] complete an innite number of critical sections. Freedom from starvation Every thread that attempts to acquire or release the lock eventually succeeds (i.e., every call to lock() or unlock() eventually returns). Note that starvation-freedom implies deadlock-freedom....
+
+  [3] eventually succeeds (i.e., every call to lock() or unlock() eventually returns). Note that starvation-freedom implies deadlock-freedom. The mutual exclusion property is clearly essential. It guarantees that the critical section, that is, the code executed between the acquisition and release of the l...
+
+📄 CHAPTER PREVIEW:
+  2 CHAPTER Mutual exclusion Mutual exclusion is perhaps the most prevalent form of coordination in multipro- cessor programming. This chapter covers classical mutual exclusion algorithms that work by reading and writing shared memory. Although these algorithms are not used in practice, we study them because they provide an ideal introduction to the kinds of algorithmic and correctness issues that arise in every area of synchronization. The chapter also provides an impossibility proof. This proof teaches us the limitations of solutions to mutual exclusion that work by reading and writing shared memory, which helps to motivate the real-world mutual exclusion algorithms that appear in later chapters. This chapter is one of the few that contains proofs of algorithms. Though the reader should fe...
+
+============================================================
+CHAPTER 7: Spin Locks - skip 7.7-7.9
+Pages: 160-193
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • backoff: 55 occurrences
+  • atomic: 39 occurrences
+  • TAS: 28 occurrences
+  • spin lock: 26 occurrences
+  • MCS: 24 occurrences
+  • compareAndSet: 19 occurrences
+  • CLH: 17 occurrences
+  • test-and-set: 14 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] CHAPTER Spin locks and contention When writing programs for uniprocessors, it is usually safe to ignore the underlying systems architectural details. Unfortunately, multiprocessor programming has yet to reach that state; for now, it is crucial to understand the underlying machine archi-...
+
+  [2] acquire the lock? There are two alternatives. If you keep trying, the lock is called a spin lock, and repeatedly testing the lock is called spinning, or busy-waiting. The Filter and Bakery algorithms are spin locks. Spinning makes sense when you expect the lock delay to be short (and only on multipr...
+
+  [3] a spin lock, and repeatedly testing the lock is called spinning, or busy-waiting. The Filter and Bakery algorithms are spin locks. Spinning makes sense when you expect the lock delay to be short (and only on multiprocessors, of course). The alternative is to suspend yourself and ask the operating sy...
+
+📄 CHAPTER PREVIEW:
+  7 CHAPTER Spin locks and contention When writing programs for uniprocessors, it is usually safe to ignore the underlying systems architectural details. Unfortunately, multiprocessor programming has yet to reach that state; for now, it is crucial to understand the underlying machine archi- tecture. The goal of this chapter is to explain how architecture affects performance, and how to exploit this knowledge to write efcient concurrent programs. We revisit the familiar mutual exclusion problem, this time with the aim of devising mutual exclusion protocols that work well with todays multiprocessors. Any mutual exclusion protocol poses the question: What do you do if you cannot acquire the lock? There are two alternatives. If you keep trying, the lock is called a spin lock, and repeatedly test...
+
+============================================================
+CHAPTER 8: Monitors - skip 8.5
+Pages: 196-210
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • fair: 4 occurrences
+  • fairness: 3 occurrences
+  • synchronized: 3 occurrences
+  • deadlock: 2 occurrences
+  • atomic: 1 occurrences
+  • CAS: 1 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] two threads, a producer and a consumer, that communicate through a shared FIFO queue. The threads might share two objects: an unsynchronized queue and a lock to protect the queue. The producer might look something like this: mutex.lock(); try {...
+
+  [2] 8.2.2 The lost-wakeup problem Just as locks are inherently vulnerable to deadlock, Condition objects are inherently vulnerable to lost wakeups, in which one or more threads wait forever without realiz- ing that the condition for which they are waiting has become true. Lost wakeups can occur in subtl...
+
+  [3] wakeup. Java provides support for monitors in the form of synchronized blocks and meth- ods, and built-in wait(), notify(), and notifyAll() methods (see Appendix A). 188...
+
+📄 CHAPTER PREVIEW:
+  8 CHAPTER Monitors and blocking synchronization 8.1 Introduction A monitor is a structured way of combining synchronization and data, encapsulating data, methods, and synchronization in a single modular package in the same way that a class encapsulates data and methods. Here is why modular synchronization is important: Imagine an application with two threads, a producer and a consumer, that communicate through a shared FIFO queue. The threads might share two objects: an unsynchronized queue and a lock to protect the queue. The producer might look something like this: mutex.lock(); try { queue.enq(x) } finally { mutex.unlock(); } This is no way to run a railroad! Suppose the queue is bounded, meaning that an attempt to add an item to a full queue cannot proceed until the queue has room. Her...
+
+============================================================
+CHAPTER 9: Linked Lists, Locking Strategies
+Pages: 214-241
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • compareAndSet: 30 occurrences
+  • atomic: 20 occurrences
+  • lock-free: 11 occurrences
+  • starvation: 9 occurrences
+  • deadlock: 8 occurrences
+  • starvation-free: 8 occurrences
+  • wait-free: 6 occurrences
+  • CAS: 5 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] 9.1 Introduction In Chapter 7, we saw how to build scalable spin locks that provide mutual exclusion efciently, even when they are heavily used. We might think that it is now a simple matter to construct scalable concurrent data structures: Take a sequential implemen- tation of the class, add a scal...
+
+  [2] Fine-grained synchronization: Instead of using a single lock to synchronize ev- ery access to an object, we partition the object into independently synchronized components, allowing method calls that access disjoint components to execute concurrently....
+
+  [3] Nonblocking synchronization: Sometimes we can eliminate locks entirely, relying on built-in atomic operations such as compareAndSet() for synchronization. The Art of Multiprocessor Programming. https://doi.org/10.1016/B978-0-12-415950-1.00019-7 Copyright 2021 Elsevier Inc. All rights reserved. 201...
+
+📄 CHAPTER PREVIEW:
+  9 CHAPTER Linked lists: The role of locking 9.1 Introduction In Chapter 7, we saw how to build scalable spin locks that provide mutual exclusion efciently, even when they are heavily used. We might think that it is now a simple matter to construct scalable concurrent data structures: Take a sequential implemen- tation of the class, add a scalable lock eld, and ensure that each method call acquires and releases that lock. We call this approach coarse-grained synchronization. Coarse-grained synchronization often works well, but there are important cases where it does not. The problem is that a class that uses a single lock to mediate all its method calls is not always scalable, even if the lock itself is scalable. Coarse-grained synchronization works well when levels of concurrency are low, ...
+
+============================================================
+CHAPTER 10: Queues, ABA Problem
+Pages: 242-261
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • compareAndSet: 41 occurrences
+  • atomic: 26 occurrences
+  • ABA problem: 17 occurrences
+  • lock-free: 17 occurrences
+  • CAS: 6 occurrences
+  • fair: 5 occurrences
+  • volatile: 5 occurrences
+  • fairness: 4 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] any number of items. Bounded pools are useful when we want to keep producer and consumer threads loosely synchronized, ensuring that producers do not get too far ahead of consumers. Bounded pools may also be simpler to implement than unbounded pools. On the other hand, unbounded pools are useful whe...
+
+  [2] Pools provide different fairness guarantees. They may be FIFO (i.e., a queue) or last-in-rst-out (LIFO) (i.e., a stack), or have other, typically weaker, properties. The importance of fairness when buffering using a pool is clear to anyone who has ever called a bank or a technical support line, only...
+
+  [3] last-in-rst-out (LIFO) (i.e., a stack), or have other, typically weaker, properties. The importance of fairness when buffering using a pool is clear to anyone who has ever called a bank or a technical support line, only to be placed in a pool of wait- ing calls. The longer you wait, the more consola...
+
+📄 CHAPTER PREVIEW:
+  10 CHAPTER Queues, memory management, and the ABA problem 10.1 Introduction In the next few chapters, we look at a broad class of objects known as pools. A pool is similar to the Set<> class studied in Chapter 9, with two main differences: A pool does not necessarily provide a contains() method to test membership, and it allows the same item to appear more than once. The Pool<> has put() and get() methods, as shown in Fig. 10.1. Pools show up in many places in concurrent systems. For example, in many applications, one or more producer threads produce items to be consumed by one or more consumer threads. These items may be jobs to perform, keystrokes to interpret, purchase orders to execute, or packets to decode. Sometimes producers are bursty, suddenly and briey producing items faster than...
+
+============================================================
+CHAPTER 11: Stacks - 11.1-11.2 only
+Pages: 264-274
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • backoff: 21 occurrences
+  • compareAndSet: 16 occurrences
+  • lock-free: 14 occurrences
+  • atomic: 10 occurrences
+  • CAS: 6 occurrences
+  • ABA problem: 4 occurrences
+  • linearizable: 4 occurrences
+  • linearizability: 1 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] show how to implement concurrent stacks that can achieve a high degree of paral- lelism. As a rst step, we consider how to build a lock-free stack in which pushes and pops synchronize at a single location. 11.2 An unbounded lock-free stack Fig. 11.1 shows a concurrent LockFreeStack class. The lock-f...
+
+  [2] pops synchronize at a single location. 11.2 An unbounded lock-free stack Fig. 11.1 shows a concurrent LockFreeStack class. The lock-free stack is a linked list, where the top eld points to the rst node (or null if the stack is empty.) For FIGURE 11.1...
+
+  [3] 11.2 An unbounded lock-free stack Fig. 11.1 shows a concurrent LockFreeStack class. The lock-free stack is a linked list, where the top eld points to the rst node (or null if the stack is empty.) For FIGURE 11.1 A lock-free stack. In part (a), a thread pushes value a onto the stack by applying a...
+
+📄 CHAPTER PREVIEW:
+  11 CHAPTER Stacks and elimination 11.1 Introduction The Stack<T> class is a collection of items (of type T) that provides push() and pop() methods satisfying the last-in-rst-out (LIFO) property: The last item pushed is the rst popped. This chapter considers how to implement concurrent stacks. At rst glance, stacks seem to provide little opportunity for concurrency, because push() and pop() calls seem to need to synchronize at the top of the stack. Surprisingly, perhaps, stacks are not inherently sequential. In this chapter, we show how to implement concurrent stacks that can achieve a high degree of paral- lelism. As a rst step, we consider how to build a lock-free stack in which pushes and pops synchronize at a single location. 11.2 An unbounded lock-free stack Fig. 11.1 shows a concurren...
+
+============================================================
+CHAPTER 13: Concurrent Hashing
+Pages: 317-346
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • atomic: 21 occurrences
+  • lock-free: 19 occurrences
+  • parallelism: 19 occurrences
+  • CAS: 7 occurrences
+  • deadlock: 5 occurrences
+  • compareAndSet: 5 occurrences
+  • volatile: 5 occurrences
+  • synchronized: 2 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] Concurrent hashing and natural parallelism 13.1 Introduction In earlier chapters, we studied how to extract parallelism from data structures like queues, stacks, and counters, which seemed to provide few opportunities for paral-...
+
+  [2] 13.1 Introduction In earlier chapters, we studied how to extract parallelism from data structures like queues, stacks, and counters, which seemed to provide few opportunities for paral- lelism. In this chapter we take the opposite approach. We study concurrent hashing, a problem that seems to be nat...
+
+  [3] 306 CHAPTER 13 Concurrent hashing and natural parallelism It is sometimes necessary to resize the table. In closed-address hash sets, buckets may become too large to search efciently. In open-address hash sets, the table may become too full to nd alternative table entries....
+
+📄 CHAPTER PREVIEW:
+  13 CHAPTER Concurrent hashing and natural parallelism 13.1 Introduction In earlier chapters, we studied how to extract parallelism from data structures like queues, stacks, and counters, which seemed to provide few opportunities for paral- lelism. In this chapter we take the opposite approach. We study concurrent hashing, a problem that seems to be naturally parallelizable or, using a more technical term, disjoint-access-parallel, meaning that concurrent method calls are likely to access disjoint locations, implying that there is little need for synchronization. We study hashing in the context of Set implementations. Recall that the Set inter- face provides the following methods: add(x) adds x to the set, and returns true if x was absent, and false otherwise; remove(x) removes x from the s...
+
+============================================================
+CHAPTER 14: Skiplists
+Pages: 347-368
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • compareAndSet: 18 occurrences
+  • wait-free: 13 occurrences
+  • atomic: 9 occurrences
+  • lock-free: 8 occurrences
+  • volatile: 6 occurrences
+  • CAS: 4 occurrences
+  • deadlock: 2 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] rithms, the typically most frequent method, contains(), which searches for an item, is wait-free. These constructions follow the design patterns outlined earlier in Chap- ter 9. 14.2 Sequential skiplists For simplicity, we treat the list as a set, meaning that keys are unique. A SkipList is...
+
+  [2] ture is a LazyList, and as in the LazyList algorithm, the add() and remove() methods use optimistic ne-grained locking, while the contains() method is wait-free. 14.3.1 A birds-eye view Here is a birds-eye view of the LazySkipList class. Start with Fig. 14.3. As in the LazyList class, each node has ...
+
+  [3] resumes. The wait-free contains() method calls find() to locate the node containing the target key. If it nds a node, it determines whether the node is in the set by check- ing whether it is unmarked and fully linked. This method, like the LazyList classs contains(), is wait-free because it ignores ...
+
+📄 CHAPTER PREVIEW:
+  14 CHAPTER Skiplists and balanced search 14.1 Introduction We have seen several concurrent implementations of sets based on linked lists and on hash tables. We now turn our attention to concurrent search structures with logarith- mic depth. There are many concurrent logarithmic search structures in the literature. Here, we are interested in search structures intended for in-memory data, as opposed to data residing on outside storage such as disks. Many popular sequential search structures, such as red-black trees or AVL trees, require periodic rebalancing to maintain the structures logarithmic depth. Rebal- ancing works well for sequential tree-based search structures, but for concurrent structures, rebalancing may cause bottlenecks and contention. Instead, we focus here on concurrent impl...
+
+============================================================
+CHAPTER 16: Scheduling - skip 16.5
+Pages: 388-411
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • TAS: 236 occurrences
+  • compareAndSet: 27 occurrences
+  • TTAS: 16 occurrences
+  • parallelism: 12 occurrences
+  • atomic: 8 occurrences
+  • CAS: 8 occurrences
+  • speedup: 6 occurrences
+  • volatile: 5 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] structured as producers and consumers also tend to be easily parallelizable. In this chapter, however, we look at applications that have inherent parallelism, but where it may not be obvious how to take advantage of it. Let us start by thinking about how to multiply two matrices in parallel. Recall ...
+
+  [2] each of those tasks (lines 2728), and then joins them2 (lines 3031). Note that the order of the forks and joins is important: to maximize the opportunity for parallelism, we must complete all fork() calls before making any join() calls. Fig. 16.5 shows how to set up a simple matrix addition using a ...
+
+  [3] tions are done, the sum can be computed. (We have seen that the matrix summation program itself has internal parallelism.) Fig. 16.6 shows the parallel matrix multiplication task. Matrix multiplication is structured in a similar way to addition. Because the MatrixMulTask does not return a result, it...
+
+📄 CHAPTER PREVIEW:
+  16 CHAPTER Scheduling and work distribution 16.1 Introduction In this chapter, we show how to decompose certain kinds of tasks into subtasks that can be executed in parallel. Some applications break down naturally into parallel tasks. For example, when a request arrives at a web server, the server can just create a thread (or assign an existing thread) to handle the request. Applications that can be structured as producers and consumers also tend to be easily parallelizable. In this chapter, however, we look at applications that have inherent parallelism, but where it may not be obvious how to take advantage of it. Let us start by thinking about how to multiply two matrices in parallel. Recall that if aij is the value at position (i,j) of matrix A, then the product C of two n n matrices A ...
+
+============================================================
+CHAPTER 18: Barriers - 18.1-18.3
+Pages: 441-453
+============================================================
+
+📌 KEY INTERVIEW TERMS FOUND:
+  • TAS: 26 occurrences
+  • atomic: 10 occurrences
+  • CAS: 2 occurrences
+  • spin lock: 1 occurrences
+  • volatile: 1 occurrences
+
+📖 SAMPLE EXCERPTS:
+
+  [1] displaying a frame display the same frame. Barrier implementations raise many of the same performance issues as spin locks in Chapter 7, as well as some new issues. Clearly, barriers should be fast, in the sense that we want to minimize the duration between when the last thread reaches the bar- rier...
+
+  [2] 18.2 Barrier implementations Fig. 18.3 shows the SimpleBarrier class, which creates an AtomicInteger counter initialized to n, the barrier size. Each thread applies getAndDecrement() to lower the counter. If the call returns 1 (line 10), then that thread is the last to reach the barrier, so it reset...
+
+  [3] 41 childCount = new AtomicInteger(count); 42 parent = myParent; 43...
+
+📄 CHAPTER PREVIEW:
+  18 CHAPTER Barriers 18.1 Introduction Imagine you are writing the graphical display for a computer game. Your program prepares a sequence of frames to be displayed by a graphics package (perhaps a hardware coprocessor). This kind of program is sometimes called a soft real-time application: real-time because it must display at least 35 frames per second to be effective, and soft because occasional failure is not catastrophic. On a single-thread machine, you might write a loop like this: while (true) { frame.prepare(); frame.display(); } If, instead, you have n parallel threads available, then it makes sense to split the frame into n disjoint parts, and have each thread prepare its part in parallel with the others. int me = ThreadID.get(); while (true) { frame[me].prepare(); frame[me].displa...
+
+
+================================================================================
+OVERALL INTERVIEW KEYWORD FREQUENCY
+================================================================================
+  • TAS: 290
+  • compareAndSet: 156
+  • atomic: 149
+  • lock-free: 93
+  • backoff: 76
+  • deadlock: 63
+  • CAS: 55
+  • starvation: 42
+  • parallelism: 35
+  • starvation-free: 34
+  • spin lock: 27
+  • speedup: 24
+  • wait-free: 24
+  • MCS: 24
+  • volatile: 22
+  • ABA problem: 21
+  • CLH: 17
+  • TTAS: 16
+  • fair: 15
+  • test-and-set: 14

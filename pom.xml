@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Java Concurrency Labs - SDE2 Interview Prep</name>
+    <name>HandsOn Concurrency - SDE2 Interview Prep</name>
     <description>Hands-on labs for mastering Java concurrency for SDE2 interviews</description>
 
     <properties>

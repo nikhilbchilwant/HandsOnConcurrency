@@ -1,4 +1,4 @@
-# Java Concurrency Labs - SDE2 Interview Prep
+# HandsOn Concurrency - SDE2 Interview Prep
 
 > **AI-Generated Repository**: This project was created with AI assistance.
 
