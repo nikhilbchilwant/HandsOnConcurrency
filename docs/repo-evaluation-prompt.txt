@@ -1,0 +1,246 @@
+# Repository Evaluation Request: HandsOnConcurrency
+
+## PROMPT FOR AI EVALUATION
+
+You are a Senior Software Engineer with 10+ years of experience in Java concurrency and who has interviewed hundreds of candidates at top tech companies (Google, Amazon, Rubrik, Dropbox). 
+
+Please evaluate this Java concurrency learning repository for SDE2 interview preparation. Provide:
+
+1. **Strengths** - What does this repo do well?
+2. **Weaknesses** - What's missing or could be improved?
+3. **Interview Readiness Score** (1-10) - How well does this prepare someone for concurrency interviews at top companies?
+4. **Specific Suggestions** - 3-5 concrete improvements
+5. **Comparison** - How does this compare to typical interview prep resources?
+
+---
+
+## REPOSITORY OVERVIEW
+
+**Purpose:** Hands-on learning project with skeleton code for mastering Java concurrency for SDE2 interviews.
+
+**Target Audience:** Software engineers with 3-6 years experience preparing for Rubrik, Dropbox, Uber, Amazon, Google interviews.
+
+**Technology:** Java 17, Maven multi-module project
+
+**Philosophy:** "Hands-on learning mode" - provides skeletons with TODOs, hints, and anti-patterns instead of complete solutions.
+
+---
+
+## STRUCTURE (47 Java files across 10 modules)
+
+```
+HandsOnConcurrency/
+├── module1-foundations/        # Labs 01-04: Race conditions, visibility, wait/notify
+│   ├── UnsafeCounter.java
+│   ├── SynchronizedCounter.java
+│   ├── AtomicCounter.java
+│   ├── VisibilityBug.java
+│   ├── VolatileFix.java
+│   ├── ThreadStates.java
+│   ├── BoundedBuffer.java (wait/notify)
+│   └── ThreadLocalDemo.java
+│
+├── module2-locks-atomics/      # Labs 05-10: Locks, atomics, CHM, queues
+│   ├── BoundedBufferWithLock.java (ReentrantLock + Condition)
+│   ├── ReadWriteCache.java
+│   ├── LockFreeStack.java (CAS) [📚 ACADEMIC]
+│   ├── CounterComparison.java
+│   ├── ConcurrentHashMapUsage.java
+│   └── BlockingQueueVariants.java
+│
+├── module3-executors-async/    # Labs 11-14: Executors, CompletableFuture
+│   ├── ThreadPoolConfiguration.java
+│   ├── CancellationPatterns.java
+│   ├── CompletableFuturePipeline.java
+│   ├── ForkJoinExamples.java
+│   └── FanOutFanIn.java
+│
+├── module4-liveness-production/  # Labs 15-17: Deadlock, shutdown
+│   ├── DeadlockDemo.java
+│   ├── DeadlockPrevention.java
+│   ├── GracefulShutdownPatterns.java
+│   └── ThreadDumpDemo.java
+│
+├── module5-testing/            # Labs 18-20: Stress testing
+│   ├── StressTestHarness.java
+│   ├── RaceDetectionConcepts.java
+│   └── DeterministicTestingPatterns.java
+│
+├── module6-classic-problems/   # THE CORE INTERVIEW PROBLEMS
+│   ├── tier1/
+│   │   ├── BoundedBlockingQueue.java [✅ HIGH - Rubrik, Dropbox, Amazon]
+│   │   ├── SimpleReadWriteLock.java
+│   │   └── DiningPhilosophers.java
+│   ├── tier2/
+│   │   ├── PrintInOrder.java
+│   │   └── CyclicBarrierMapReduce.java
+│   ├── tier3/
+│   │   ├── TokenBucketRateLimiter.java [✅ HIGH - All API companies]
+│   │   ├── SimpleThreadPool.java [✅ HIGH - Uber, Amazon]
+│   │   ├── DelayedTaskScheduler.java [✅ HIGH - Rubrik]
+│   │   └── ConcurrentLRUCache.java
+│   └── tier4/
+│       ├── DoubleCheckedSingleton.java
+│       ├── HolderSingleton.java
+│       └── EnumSingleton.java
+│
+├── module7-capstone/           # Larger projects
+│   ├── DataPipeline.java
+│   ├── JobOrchestrator.java
+│   └── MiniTaskScheduler.java
+│
+├── module8-lld-concurrency/    # LLD + Concurrency
+│   └── (Booking, Parking, PubSub systems)
+│
+├── module9-debug/              # 🔴 DEBUGGING PRACTICE (Rubrik/Dropbox style)
+│   └── broken/
+│       ├── BrokenBlockingQueue.java (3 bugs)
+│       ├── DeadlockBanking.java (2 bugs)
+│       ├── BrokenRateLimiter.java (2 bugs)
+│       ├── MissingVolatile.java (1 bug)
+│       └── NotifyVsNotifyAll.java (1 bug)
+│
+└── module10-evolution/         # 📈 PROGRESSIVE IMPLEMENTATION
+    └── ratelimiter/
+        ├── Step1_SingleThreaded.java
+        ├── Step2_Synchronized.java
+        ├── Step3_LockBased.java
+        └── Step4_Optimized.java (Atomics)
+```
+
+---
+
+## SAMPLE CODE: Skeleton with Hints
+
+### BoundedBlockingQueue.java (Most Important)
+
+```java
+/**
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ ✅ INTERVIEW RELEVANCE: HIGH PRIORITY                                  │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ Companies: Rubrik, Dropbox, Amazon, Uber, Google                       │
+ * │ Frequency: VERY HIGH - Asked in 70%+ of concurrency interviews         │
+ * │ Time Target: Implement from scratch in < 20 minutes                    │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
+ * TODO: Implement a thread-safe bounded queue that:
+ *   - Blocks on put() when full
+ *   - Blocks on take() when empty
+ * 
+ * ⚠️ CRITICAL: Common mistakes to avoid:
+ *   1. Using IF instead of WHILE for wait conditions (spurious wakeups!)
+ *   2. Using notify() instead of notifyAll()
+ *   3. Forgetting to handle InterruptedException properly
+ * 
+ * 🔑 HINT - The correct pattern:
+ *   synchronized (this) {
+ *       while (count == items.length) {  // WHILE, not IF!
+ *           wait();
+ *       }
+ *       // add item...
+ *       notifyAll();
+ *   }
+ */
+public class BoundedBlockingQueue<E> {
+    
+    private final Object[] items;
+    private int head, tail, count;
+    
+    public synchronized void put(E item) throws InterruptedException {
+        // TODO: Implement blocking put
+    }
+    
+    public synchronized E take() throws InterruptedException {
+        // TODO: Implement blocking take
+        return null;
+    }
+}
+```
+
+---
+
+## SAMPLE CODE: Debugging Practice
+
+### BrokenBlockingQueue.java (module9-debug)
+
+```java
+/**
+ * 🔴 BROKEN CODE - FIND THE BUGS!
+ * Expected bugs: 3 | Time target: < 5 minutes
+ */
+public class BrokenBlockingQueue<E> {
+    
+    private final Queue<E> queue = new LinkedList<>();
+    private final int capacity;
+    
+    public synchronized void put(E element) throws InterruptedException {
+        // BUG #1: Using 'if' instead of 'while' - spurious wakeup!
+        if (queue.size() == capacity) {
+            wait();
+        }
+        queue.add(element);
+        
+        // BUG #2: Using notify() instead of notifyAll()
+        notify();
+    }
+    
+    public synchronized E take() throws InterruptedException {
+        if (queue.isEmpty()) {
+            wait();
+        }
+        E element = queue.poll();
+        notify();
+        // BUG #3: Not checking if poll() returned null
+        return element;
+    }
+}
+```
+
+---
+
+## SUPPORTING DOCUMENTATION
+
+### docs/common-bugs-cheatsheet.md
+- 10 common concurrency bugs with fixes
+- Frequency ratings (⭐ system)
+- 3-pass debugging strategy for interviews
+- Related LeetCode problems
+
+### docs/concurrency-interview-prep-blueprint.md
+- Company-specific insights (Rubrik, Dropbox, Uber, Amazon)
+- Topic priority matrix (HIGH/MEDIUM/ACADEMIC)
+- Recommended preparation order
+
+---
+
+## INTERVIEW RELEVANCE TAGS
+
+Files include relevance headers:
+- ✅ **HIGH PRIORITY** - Asked by multiple companies (BoundedBlockingQueue, RateLimiter, ThreadPool)
+- ⚠️ **MEDIUM** - Good to know (DiningPhilosophers, CompletableFuture)
+- 📚 **ACADEMIC** - Rarely asked at SDE2 level (LockFreeStack, CAS details)
+
+---
+
+## WHAT THIS REPO DOES NOT INCLUDE
+
+1. **Complete solutions** - Intentionally skeleton-only for learning
+2. **Timed challenge scripts** - Not implemented
+3. **Machine coding problems** (90-min mini-Kafka style) - Not implemented
+4. **Distributed concurrency** - Single JVM focus only
+5. **Performance benchmarks** - Conceptual only
+
+---
+
+## QUESTIONS FOR EVALUATION
+
+1. Is the balance between theory and practice appropriate for SDE2 interviews?
+2. Are the "interview relevance" tags accurate based on your experience?
+3. Is the debugging module (module9-debug) useful for Rubrik/Dropbox-style debugging rounds?
+4. What critical topics are missing that are commonly asked?
+5. Would you recommend this to a candidate preparing for concurrency interviews?
+
+---
+
+*End of repository summary. Please provide your evaluation.*

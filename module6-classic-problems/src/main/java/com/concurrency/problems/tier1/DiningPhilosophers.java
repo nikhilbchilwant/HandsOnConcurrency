@@ -3,32 +3,82 @@ package com.concurrency.problems.tier1;
 /**
  * Classic Problem #3: Dining Philosophers
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ ⚠️ INTERVIEW RELEVANCE: MEDIUM PRIORITY │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ Companies: Academic favorite, occasionally Amazon, Google │
+ * │ Frequency: MEDIUM - Tests deadlock reasoning, not often coded │
+ * │ Time Target: Explain solutions in < 10 minutes │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 🎤 INTERVIEW FOLLOW-UP QUESTIONS (Be ready for these!) │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ │
+ * │ Q1: "What are the 4 conditions for deadlock?" │
+ * │ → 1. MUTUAL EXCLUSION: Resource can't be shared │
+ * │ → 2. HOLD AND WAIT: Holding one, waiting for another │
+ * │ → 3. NO PREEMPTION: Can't forcibly take a resource │
+ * │ → 4. CIRCULAR WAIT: A→B→C→...→A │
+ * │ → INSIGHT: Break ANY ONE condition to prevent deadlock │
+ * │ │
+ * │ Q2: "Which condition does resource hierarchy break?" │
+ * │ → CIRCULAR WAIT - everyone acquires in same order, no cycle │
+ * │ → INSIGHT: Philosopher N breaks the cycle by grabbing fork 0 first │
+ * │ │
+ * │ Q3: "What's the Waiter solution and which condition does it break?" │
+ * │ → Semaphore with N-1 permits (only N-1 philosophers try at once) │
+ * │ → Breaks HOLD AND WAIT - if can't get permit, don't hold any fork │
+ * │ → TRADE-OFF: Limits parallelism (bottleneck at semaphore) │
+ * │ │
+ * │ Q4: "How would you detect deadlock in a running system?" │
+ * │ → Build wait-for graph, check for cycles │
+ * │ → JVM: jstack shows thread states and lock owners │
+ * │ → PRODUCTION: Use ThreadMXBean.findDeadlockedThreads() │
+ * │ │
+ * │ Q5: "What's livelock? Give an example." │
+ * │ → Threads actively changing state but making no progress │
+ * │ → Example: Both philosophers pick up fork, see other fork taken, │
+ * │ put down fork, retry... forever in sync! │
+ * │ → SOLUTION: Add random delay before retry (backoff) │
+ * │ │
+ * │ Q6: "How does tryLock with timeout help prevent deadlock?" │
+ * │ → tryLock(timeout): If can't get lock in time, release held locks │
+ * │ → Breaks HOLD AND WAIT - if partial acquire fails, release all │
+ * │ → CAVEAT: Can still livelock if all timeout at same rate │
+ * │ │
+ * │ Q7: "What's a real-world system where this pattern applies?" │
+ * │ → Database transactions: lock rows in consistent order │
+ * │ → Bank transfers: lock accounts by account number │
+ * │ → INSIGHT: The pattern isn't about eating - it's about lock ordering!│
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * Five philosophers sit at a round table. Each needs TWO forks to eat.
  * Forks are placed between each pair of philosophers.
  * 
  * ⚠️ PROBLEM: If each philosopher picks up their left fork first,
- *   they all wait for the right fork → DEADLOCK!
+ * they all wait for the right fork → DEADLOCK!
  * 
  * TODO: Implement a solution that prevents deadlock.
  * 
  * 💡 SOLUTIONS (implement one or more):
  * 
- *   1. RESOURCE HIERARCHY (implemented here):
- *      Always pick up the lower-numbered fork first.
- *      Philosopher 4 picks up fork 0 before fork 4 (breaks the cycle!)
+ * 1. RESOURCE HIERARCHY (implemented here):
+ * Always pick up the lower-numbered fork first.
+ * Philosopher 4 picks up fork 0 before fork 4 (breaks the cycle!)
  * 
- *   2. WAITER (Semaphore):
- *      A "waiter" permits only 4 philosophers to try eating at once.
- *      (See DiningPhilosophersWaiter.java)
+ * 2. WAITER (Semaphore):
+ * A "waiter" permits only 4 philosophers to try eating at once.
+ * (See DiningPhilosophersWaiter.java)
  * 
- *   3. ASYMMETRIC:
- *      Odd philosophers pick left first, even pick right first.
+ * 3. ASYMMETRIC:
+ * Odd philosophers pick left first, even pick right first.
  * 
  * 📝 NOTE: This problem demonstrates the FOUR conditions for deadlock:
- *   1. Mutual Exclusion: Forks can't be shared
- *   2. Hold and Wait: Holding one fork while waiting for another
- *   3. No Preemption: Can't take a fork from another philosopher
- *   4. Circular Wait: A→B→C→D→E→A (broken by resource hierarchy!)
+ * 1. Mutual Exclusion: Forks can't be shared
+ * 2. Hold and Wait: Holding one fork while waiting for another
+ * 3. No Preemption: Can't take a fork from another philosopher
+ * 4. Circular Wait: A→B→C→D→E→A (broken by resource hierarchy!)
  */
 public class DiningPhilosophers {
     

@@ -24,6 +24,54 @@ import java.util.concurrent.locks.ReentrantLock;
  * │ pattern - this shows deep understanding. │
  * └─────────────────────────────────────────────────────────────────────────┘
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 🎤 INTERVIEW FOLLOW-UP QUESTIONS (Be ready for these!) │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ │
+ * │ Q1: "A new task arrives with shorter delay. What happens?" │
+ * │ → Worker is sleeping for old task's delay - won't see new task! │
+ * │ → SOLUTION: Signal the condition after adding. Worker wakes, │
+ * │ rechecks head, adjusts sleep time if new task is sooner. │
+ * │ → INSIGHT: This is why DelayQueue's take() is complex! │
+ * │ │
+ * │ Q2: "Why use awaitNanos() instead of Thread.sleep()?" │
+ * │ → sleep() can't be interrupted by condition.signal() │
+ * │ → awaitNanos() releases lock while waiting AND is interruptible │
+ * │ → TRAP: awaitNanos returns remaining time - use it for precision! │
+ * │ │
+ * │ Q3: "How does ScheduledExecutorService handle periodic tasks?" │
+ * │ → After task runs, reschedule with next execution time │
+ * │ → scheduleAtFixedRate: next = start + period * n │
+ * │ → scheduleWithFixedDelay: next = end_of_last + delay │
+ * │ → TRAP: If task takes longer than period, executions queue up! │
+ * │ │
+ * │ Q4: "What happens if the task throws an exception?" │
+ * │ → In ScheduledExecutorService: SILENT failure, future runs cancelled! │
+ * │ → SOLUTION: Wrap tasks in try-catch, log errors, continue │
+ * │ → PRODUCTION: Use afterExecute() hook for error handling │
+ * │ │
+ * │ Q5: "Why is System.nanoTime() better than currentTimeMillis() here?" │
+ * │ → nanoTime() is monotonic - immune to wall clock adjustments │
+ * │ → currentTimeMillis() can jump backward (NTP sync)! │
+ * │ → INSIGHT: For durations, always use nanoTime() │
+ * │ │
+ * │ Q6: "How would you implement task cancellation?" │
+ * │ → Return a handle (like ScheduledFuture) with cancel() method │
+ * │ → On cancel, mark task as cancelled + remove from queue │
+ * │ → TRAP: Worker might already be executing - cancel has no effect! │
+ * │ → SOLUTION: Check isCancelled() before task.run() │
+ * │ │
+ * │ Q7: "What's the time complexity of adding a task?" │
+ * │ → PriorityQueue: O(log n) for insertion │
+ * │ → ALTERNATIVE: Timer wheel (Kafka, Netty) is O(1) for add/remove! │
+ * │ → USE TIMER WHEEL WHEN: millions of tasks, most expire without firing │
+ * │ │
+ * │ Q8: "Should the worker hold the lock while executing the task?" │
+ * │ → NO! Long task would block schedule() callers │
+ * │ → Pattern: peek head, wait, poll head, RELEASE LOCK, then run task │
+ * │ → INSIGHT: This is why the code structure is tricky │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * TODO: Implement a scheduler that executes tasks after a delay.
  * 
  * 📝 NOTE: Similar to ScheduledExecutorService but built from scratch.

@@ -3,18 +3,68 @@ package com.concurrency.problems.tier1;
 /**
  * Classic Problem #2: Custom Reader-Writer Lock
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ ✅ INTERVIEW RELEVANCE: HIGH PRIORITY │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ Companies: Dropbox, Rubrik, Google │
+ * │ Frequency: HIGH - Tests lock design and starvation prevention │
+ * │ Time Target: Implement from scratch in < 25 minutes │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 🎤 INTERVIEW FOLLOW-UP QUESTIONS (Be ready for these!) │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ │
+ * │ Q1: "Your impl has writer preference. What about reader starvation?" │
+ * │ → Yes, continuous writers can starve readers! │
+ * │ → SOLUTION: Alternate between reader/writer batches, or use fair mode │
+ * │ → INSIGHT: ReentrantReadWriteLock(true) gives FIFO fairness │
+ * │ │
+ * │ Q2: "Can a reader upgrade to a writer lock?" │
+ * │ → NO in most impls - would cause deadlock if 2 readers try! │
+ * │ → Reader1 holds read, waits for write. Reader2 same = DEADLOCK │
+ * │ → SOLUTION: Release read lock first, then acquire write lock │
+ * │ → ADVANCED: StampedLock supports tryConvertToWriteLock() │
+ * │ │
+ * │ Q3: "Can a writer downgrade to a reader lock?" │
+ * │ → YES - safe because writer has exclusive access │
+ * │ → Pattern: Acquire write, do writes, acquire read, release write │
+ * │ → INSIGHT: Downgrade avoids "gap" where another writer could sneak in │
+ * │ │
+ * │ Q4: "What's the difference between this and ReentrantReadWriteLock?" │
+ * │ → RRWL supports: reentrancy, fair mode, tryLock, lockInterruptibly │
+ * │ → This impl: simpler but no reentrancy (risk of self-deadlock!) │
+ * │ → TRAP: If same thread calls lockRead() twice, it deadlocks here │
+ * │ │
+ * │ Q5: "When is ReadWriteLock slower than a single lock?" │
+ * │ → When reads are short and contention is low │
+ * │ → RW lock has overhead of tracking reader count │
+ * │ → RULE: Only use RWLock when read time >> write time │
+ * │ │
+ * │ Q6: "What's StampedLock and when would you use it?" │
+ * │ → Java 8 lock with optimistic reads (no locking for reads!) │
+ * │ → Pattern: try optimistic, validate, fall back to read lock │
+ * │ → USE WHEN: Read-heavy workload with very rare writes │
+ * │ → TRAP: Not reentrant, more complex API │
+ * │ │
+ * │ Q7: "Why use notifyAll() instead of notify() in unlockWrite()?" │
+ * │ → Multiple readers might be waiting - wake them all! │
+ * │ → notify() wakes only one - other readers stay blocked │
+ * │ → ADVANCED: Could optimize with separate conditions for readers/writers│
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * TODO: Implement a reader-writer lock from scratch.
  * 
  * 📝 NOTE: Rules for reader-writer locks:
- *   - Multiple readers can hold the lock simultaneously
- *   - Only one writer can hold the lock (exclusive)
- *   - Writers and readers are mutually exclusive
+ * - Multiple readers can hold the lock simultaneously
+ * - Only one writer can hold the lock (exclusive)
+ * - Writers and readers are mutually exclusive
  * 
  * ⚠️ AVOID: Writer starvation!
- *   If readers keep coming, writers might wait forever.
- *   
+ * If readers keep coming, writers might wait forever.
+ * 
  * 💡 THINK: How would you implement "writer preference"?
- *   When a writer is waiting, new readers should block too!
+ * When a writer is waiting, new readers should block too!
  * 
  * @see java.util.concurrent.locks.ReentrantReadWriteLock for production use
  */

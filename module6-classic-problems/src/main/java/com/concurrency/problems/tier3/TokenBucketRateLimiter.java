@@ -22,6 +22,51 @@ package com.concurrency.problems.tier3;
  * │ 4. Discuss distributed rate limiting (Redis + Lua scripts) │
  * └─────────────────────────────────────────────────────────────────────────┘
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 🎤 INTERVIEW FOLLOW-UP QUESTIONS (Be ready for these!) │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ │
+ * │ Q1: "Token Bucket vs Sliding Window - when would you use each?" │
+ * │ → Token Bucket: Allows bursts (good for user experience) │
+ * │ → Sliding Window: Smoother rate, better for strict SLAs │
+ * │ → CLEVER INSIGHT: Token Bucket is O(1), Sliding Log is O(n) │
+ * │ │
+ * │ Q2: "Why use lazy refill instead of a background thread?" │
+ * │ → Background thread wastes resources when system is idle │
+ * │ → Lazy refill is O(1) per request, no extra threads │
+ * │ → TRAP: Don't forget to cap at capacity (tokens shouldn't accumulate) │
+ * │ │
+ * │ Q3: "What if System.currentTimeMillis() is slow on your system?" │
+ * │ → Use System.nanoTime() for elapsed time (monotonic, no syscall) │
+ * │ → But nanoTime() has no absolute meaning - only for deltas │
+ * │ → ADVANCED: Consider using Instant.now() for microsecond precision │
+ * │ │
+ * │ Q4: "How would you implement this for distributed systems?" │
+ * │ → Central store (Redis) with atomic operations │
+ * │ → Lua script for atomic refill + consume │
+ * │ → TRADE-OFF: Network latency vs global consistency │
+ * │ → ALTERNATIVE: Local rate limiters with eventual consistency │
+ * │ │
+ * │ Q5: "How do you handle clock skew in distributed rate limiting?" │
+ * │ → Store timestamps on the server (Redis), not client │
+ * │ → Use relative time (TTLs) instead of absolute timestamps │
+ * │ → INSIGHT: This is why Redis SETNX + EXPIRE is popular │
+ * │ │
+ * │ Q6: "What if I need different rate limits per user tier?" │
+ * │ → Store per-user bucket configuration │
+ * │ → Use a Map<UserId, RateLimiter> with lazy initialization │
+ * │ → WATCH OUT: Memory leak if you don't expire inactive users! │
+ * │ │
+ * │ Q7: "How do you gracefully degrade when rate limited?" │
+ * │ → Return Retry-After header with seconds until token available │
+ * │ → Use backoff: retryAfter = (1 - availableTokens) / refillRate │
+ * │ → PRODUCTION: Consider returning 429 with exponential backoff hint │
+ * │ │
+ * │ Q8: "Can you implement acquire() that blocks until token available?" │
+ * │ → Calculate wait time, use wait(ms), but watch for spurious wakeups! │
+ * │ → ADVANCED: Guava's RateLimiter uses SmoothBursty for this │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * TODO: Implement a rate limiter using the Token Bucket algorithm.
  * 
  * 📝 NOTE: Token Bucket works like this:

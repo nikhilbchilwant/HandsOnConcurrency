@@ -24,6 +24,55 @@ import java.util.concurrent.LinkedBlockingQueue;
  * │ as a follow-up to show production awareness. │
  * └─────────────────────────────────────────────────────────────────────────┘
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 🎤 INTERVIEW FOLLOW-UP QUESTIONS (Be ready for these!) │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ │
+ * │ Q1: "What happens when the task queue is full?" │
+ * │ → Current impl uses LinkedBlockingQueue (unbounded) - never full! │
+ * │ → For bounded queue, need a REJECTION POLICY: │
+ * │ - AbortPolicy: throw RejectedExecutionException │
+ * │ - CallerRunsPolicy: caller thread runs the task (backpressure!) │
+ * │ - DiscardPolicy: silently drop the task │
+ * │ - DiscardOldestPolicy: drop oldest queued task │
+ * │ → INSIGHT: CallerRunsPolicy slows down producer = natural backpressure│
+ * │ │
+ * │ Q2: "shutdown() vs shutdownNow() - what's the difference?" │
+ * │ → shutdown(): Stop accepting new tasks, let queued tasks complete │
+ * │ → shutdownNow(): Interrupt workers, return unexecuted tasks │
+ * │ → TRAP: shutdown() doesn't interrupt workers - they finish current! │
+ * │ │
+ * │ Q3: "A task throws an exception. What happens to the worker?" │
+ * │ → If uncaught, worker thread DIES - pool shrinks by one! │
+ * │ → SOLUTION: Wrap task.run() in try-catch, log but continue │
+ * │ → PRODUCTION: Use Thread.setUncaughtExceptionHandler() for cleanup │
+ * │ │
+ * │ Q4: "How would you implement a cached thread pool (grow/shrink)?" │
+ * │ → Core threads + extra threads that die after idle timeout │
+ * │ → poll(keepAlive, TimeUnit) instead of take() for non-core threads │
+ * │ → INSIGHT: This is how Executors.newCachedThreadPool() works │
+ * │ │
+ * │ Q5: "Why use volatile for isShutdown but not for taskQueue?" │
+ * │ → taskQueue is a BlockingQueue - already thread-safe internally │
+ * │ → isShutdown is a simple boolean read/written from multiple threads │
+ * │ → TRAP: volatile ensures visibility, NOT atomicity of check-then-act │
+ * │ │
+ * │ Q6: "How many threads should a pool have?" │
+ * │ → CPU-bound: ~number of cores (Runtime.availableProcessors()) │
+ * │ → IO-bound: cores * (1 + wait_time/compute_time), often 10x cores │
+ * │ → INSIGHT: Little's Law - threads = throughput * latency │
+ * │ │
+ * │ Q7: "How would you add support for Callable<T> and Future<T>?" │
+ * │ → Wrap Callable in FutureTask (implements Runnable & Future) │
+ * │ → Return the FutureTask to caller for result/cancellation │
+ * │ → TRAP: Calling get() before completion blocks the caller! │
+ * │ │
+ * │ Q8: "What's the danger of unbounded queues?" │
+ * │ → OOM if tasks arrive faster than processed (memory keeps growing) │
+ * │ → SOLUTION: Use bounded queue + rejection policy for backpressure │
+ * │ → PRODUCTION: Monitor queue size and alert before OOM │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * TODO: Implement a fixed-size thread pool from scratch.
  * 
  * 📝 NOTE: This is how java.util.concurrent.ThreadPoolExecutor works!

@@ -21,6 +21,49 @@ package com.concurrency.problems.tier1;
  * │ for better flexibility" as a follow-up. │
  * └─────────────────────────────────────────────────────────────────────────┘
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 🎤 INTERVIEW FOLLOW-UP QUESTIONS (Be ready for these!) │
+ * ├─────────────────────────────────────────────────────────────────────────┤
+ * │ │
+ * │ Q1: "Why use notifyAll() instead of notify()?" │
+ * │ → notify() wakes ONE thread - might wake wrong type (producer vs │
+ * │ consumer). notifyAll() is safer but less efficient. │
+ * │ → CLEVER FOLLOW-UP: "When IS notify() sufficient?" │
+ * │ Answer: When all waiters are equivalent (same condition). │
+ * │ │
+ * │ Q2: "What if I need put() to timeout after 5 seconds?" │
+ * │ → Use wait(timeoutMs) and track remaining time in a loop. │
+ * │ → TRAP: Don't forget to recalculate remaining time after each wake! │
+ * │ long deadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(5); │
+ * │ while (full && System.nanoTime() < deadline) { │
+ * │ wait(remaining); │
+ * │ } │
+ * │ │
+ * │ Q3: "How would you make this fair (FIFO ordering of waiters)?" │
+ * │ → wait/notify has NO fairness guarantees! │
+ * │ → Use ReentrantLock(true) with Condition for fair locking. │
+ * │ → TRADE-OFF: Fairness reduces throughput due to thread handoff. │
+ * │ │
+ * │ Q4: "Your queue has 1000 producers and 1 consumer. Problem?" │
+ * │ → notifyAll() wakes ALL 1000 producers when one slot opens! │
+ * │ → SOLUTION: Use separate Conditions (notFull, notEmpty) with │
+ * │ ReentrantLock so we signal only relevant waiters. │
+ * │ │
+ * │ Q5: "What happens if a thread is interrupted while waiting?" │
+ * │ → InterruptedException is thrown, must handle or propagate. │
+ * │ → TRAP: If you catch and ignore, the interrupt flag is cleared! │
+ * │ Always either propagate or call Thread.currentThread().interrupt() │
+ * │ │
+ * │ Q6: "Can this implementation handle null elements?" │
+ * │ → Yes in this impl, but BAD PRACTICE. Use Optional or sentinel if │
+ * │ needed. null often signals "empty" or "poison pill". │
+ * │ │
+ * │ Q7: "How does ArrayBlockingQueue differ from your implementation?" │
+ * │ → Uses ReentrantLock + 2 Conditions (notEmpty, notFull) │
+ * │ → Supports fair mode │
+ * │ → More efficient signaling (only signal relevant waiters) │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ * 
  * This is THE most important concurrency problem for interviews!
  * 
  * TODO: Implement a thread-safe bounded queue that:

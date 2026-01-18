@@ -1,0 +1,1161 @@
+Title: Software Development Engineer
+Company: Google
+Date: 32 minutes ago
+Questions/Details:
+1176. Google Interview Experience for Software Development Engineer
+Posted 32 minutes ago
+ 0 Comments
+ 4 Views
+Summary
+Round 1
+Round 2
+In total, there were 2 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Online Coding Challenge (60 minutes): This online assessment consisted of two data structures and algorithms problems. The first was an easy-difficulty problem with a complex framing involving geometry and optimization, and the second was a medium-difficulty dynamic programming problem focusing on binary array subarrays.
+
+👉 Round 2 - Recruiter Discussion (30 minutes): This virtual discussion with a Google recruiter started with my self-introduction. The primary focus of the call quickly shifted to clarifying my eligibility for the apprenticeship role, as the program was not targeted at current undergraduate students.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: Meta
+Date: 3 hours ago
+Questions/Details:
+1175. Meta Interview Experience for Software Development Engineer 2
+Posted 3 hours ago
+ 0 Comments
+ 8 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Phone Screen (45 minutes): This round included two coding problems, focusing on basic arithmetic operations on strings and identifying frequent elements. The interviewer was friendly, and I completed both questions comfortably, despite some very subtle feedback points I later realized.
+
+👉 Round 2 - Onsite Coding (DSA) Round (60 minutes): This coding round involved two problems focused on array manipulation and expression evaluation. I faced challenges due to a rude interviewer and constant interruptions, which impacted my performance. I completed the first question fully but made mistakes in the second one.
+
+👉 Round 3 - AI-Enabled Round (45 minutes): This round, which was completely new to me, focused on a string-processing problem that involved debugging existing code and then implementing a function to filter words based on shared letters. The interviewer was extremely friendly and helpful, which made the round feel much better.
+
+👉 Round 4 - Product Architecture Round (60 minutes): This round focused on designing a newsfeed or Instagram-like system, including core entities, APIs, and a high-level service and database diagram. The interviewer quickly moved to follow-up questions, which seemed to confirm his understanding. The round also included several unexpected, random UI-related questions that felt outside of typical preparation.
+
+👉 Round 5 - Behavioural Round (45 minutes): This round consisted of standard behavioral questions with follow-ups, evaluating my past experiences and how I apply leadership principles. I initially fumbled some answers due to nervousness, as the interviewer did not feel very friendly, but I recovered to answer the rest using the STAR method.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Senior Software Development Engineer
+Company: PayPal
+Date: 5 hours ago
+Questions/Details:
+1174. PayPal Interview Experience for Senior Software Development Engineer
+Posted 5 hours ago
+ 0 Comments
+ 7 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+Round 6
+Round 7
+In total, there were 7 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Recruiter Screening (45 minutes): I was initially contacted by a recruiter via email for a Senior Software Engineer 3 position and subsequently received an online coding assessment link.
+
+👉 Round 2 - Online Coding Assessment (90 minutes): This round consisted of three coding problems: two based on priority queue or heap data structures (one easy and one medium difficulty), and an additional easy-level coding question.
+
+👉 Round 3 - Data Structures and Algorithms Round (45 minutes): This round focused on demonstrating efficient algorithmic solutions, a deeper understanding of algorithmic trade-offs, and proficiency with intermediate data structures. It included two medium-level coding questions and five scenario-based questions where I had to choose the right data structure for specific use cases, emphasizing knowledge of structures like Tries.
+
+👉 Round 4 - System Design Round (45 minutes): This round involved a detailed system design discussion for a shopping website, with a particular focus on the cart and wishlist functionalities. Follow-up questions also covered general high-level design concepts such as caching, load balancing, and data flow.
+
+👉 Round 5 - Coding and Design Mixed Round (45 minutes): This round combined complex coding tasks with design problem-solving. It covered small-to-medium feature development, requiring intermediate domain knowledge. It also included questions on scaling systems and handling huge datasets.
+
+👉 Round 6 - Bar Raiser Round 1 (45 minutes): This bar raiser round assessed my initiative, leadership potential for small projects or tasks, and ability to mentor others. I was expected to constructively handle conflicts and contribute effectively to team goals. The discussion delved into PayPal's principles and my alignment with them, including three general behavioral questions.
+
+👉 Round 7 - Bar Raiser Round 2 (45 minutes): The second bar raiser round covered various high-level design topics, including load balancing and database optimization. It also included a mix of general Java and data structures and algorithms questions, as well as several behavioral questions. The discussion focused heavily on my roles and responsibilities in previous organizations, past projects, and expectations for the current role.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: MoEngage
+Date: 5 hours ago
+Questions/Details:
+1172. MoEngage Interview Experience for Software Development Engineer 2
+Posted 5 hours ago
+ 0 Comments
+ 3 Views
+Summary
+Round 1
+Round 2
+Round 3
+In total, there were 3 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Javascript Basics (60 minutes): This round started with my introduction and then immediately delved into core JavaScript questions, focusing on fundamental concepts like event handling and array manipulation.
+
+👉 Round 2 - Deep Dive into React (60 minutes): This round was a deep dive into React, covering concepts like migration challenges, core principles, rendering mechanisms, and performance optimizations. It concluded with a coding problem to build an Accordion component.
+
+👉 Round 3 - Hiring Manager (45 minutes): This round focused on my past projects, team structure, and general fitment questions to assess my alignment with the company's culture and values. The discussion explored my technical ownership and decision-making approach within those contexts.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Senior Software Engineer
+Company: LinkedIn
+Date: 5 hours ago
+Questions/Details:
+1171. LinkedIn Interview Experience for Senior Software Engineer
+Posted 5 hours ago
+ 0 Comments
+ 5 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - 1st Technical Screening Round (60 minutes): This round covered a coding problem, a discussion about my past projects, and several fundamental operating system and networking concepts.
+
+👉 Round 2 - 1st Coding Round (60 minutes): I was given a coding problem that involved an N-ary tree, though I don't recall the exact details.
+
+👉 Round 3 - 2nd Coding + AI Round (60 minutes): This round featured a coding problem related to topological sorting, similar to course scheduling. The interviewer seemed unfamiliar with the AI assist tool, which unfortunately wasted some time.
+
+👉 Round 4 - 3rd System Design Round (60 minutes): The system design discussion focused on building a metrics aggregator and monitoring system.
+
+👉 Round 5 - Host Manager Round (60 minutes): I discussed my past projects, highlighting technical challenges and design choices. The interviewer also asked general behavioral questions and a system design problem on data migration.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Infrastructure Software Engineer, Metadata
+Company: Dropbox
+Date: 11 hours ago
+Questions/Details:
+1170. Dropbox Interview Experience for Infrastructure Software Engineer, Metadata
+Posted 11 hours ago
+ 0 Comments
+ 5 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Online Assessment (60 minutes): This online assessment required implementing new features and a new service within an existing backend application, utilizing a given API framework and integrating with a React frontend. The questions were progressively difficult.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Programmer Analyst
+Company: Cognizant
+Date: 18 hours ago
+Questions/Details:
+1169. Cognizant Interview Experience for Programmer Analyst
+Posted 18 hours ago
+ 0 Comments
+ 5 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Technical Interview (75 minutes): This round covered fundamental object-oriented programming concepts, basic coding problems, SQL queries, database commands, a classic logic puzzle, and a detailed discussion about the candidate's past project architecture and design decisions.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer
+Company: Google
+Date: 20 hours ago
+Questions/Details:
+1168. Google Interview Experience for Software Development Engineer
+Posted 20 hours ago
+ 0 Comments
+ 9 Views
+Summary
+Round 1
+Round 2
+In total, there were 2 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Coding (DSA) and Googlyness (60 minutes): This round began with a graph traversal problem focused on network reachability between routers in a 2D space, followed by a brief 'Googlyness' (behavioral) discussion.
+
+👉 Round 2 - Coding (DSA) (45 minutes): This round focused on a coding challenge to identify and measure 'islands' within a binary tree structure.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Senior Machine Learning Engineer
+Company: Google
+Date: 22 hours ago
+Questions/Details:
+1167. Google Interview Experience for Senior Machine Learning Engineer
+Posted 22 hours ago
+ 0 Comments
+ 9 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Phone Screening (45 minutes): This round presented a task scheduling optimization problem, followed by a related follow-up question. The solutions involved heap, array-based approaches, and binary search.
+
+👉 Round 2 - DSA Round (60 minutes): This round focused on a grid-based pattern counting problem with specific traversal rules, including a follow-up on algorithmic optimization.
+
+👉 Round 3 - AI/ML Round (60 minutes): This round involved a machine learning problem focused on classifying a query integer into one of two arrays, with discussions around clustering and distance-based optimization.
+
+👉 Round 4 - Googleyness and Leadership Round (30 minutes): This round consisted of basic situational questions to assess leadership principles and cultural fit.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Fontend Developer 2
+Company: Agoda
+Date: 23 hours ago
+Questions/Details:
+1166. Agoda Interview Experience for Fontend Developer 2
+Posted 23 hours ago
+ 0 Comments
+ 5 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Coding and Problem Solving (60 minutes): 1 problem was asked in this round. It was based on Data Structures & Algorithms (DSA), Dynamic Programming (DP), Coding and Problem-Solving
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: Uber
+Date: 1 day ago
+Questions/Details:
+1165. Uber Interview Experience for Software Development Engineer 2
+Posted 1 day ago
+ 0 Comments
+ 32 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Phone Screen (45 minutes): This round focused on a data structures and algorithms question related to string manipulation to form a palindrome.
+
+👉 Round 2 - DSA Round (60 minutes): This round involved a mathematical data structures and algorithms problem focusing on array transformation with specific numeric constraints.
+
+👉 Round 3 - Android Machine Coding (90 minutes): This round required implementing new features in an existing Android application and performing a code review.
+
+👉 Round 4 - HLD Round (60 minutes): This round focused on high-level system design for an Android SDK with search capabilities.
+
+👉 Round 5 - Hiring Manager Round (45 minutes): This round covered standard hiring manager questions, including a deep dive into a past project.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Senior Member of Technical Staff - Frontend
+Company: Salesforce
+Date: 1 day ago
+Questions/Details:
+1164. Salesforce Interview Experience for Senior Member of Technical Staff - Frontend
+Posted 1 day ago
+(Offer received)
+ 0 Comments
+ 15 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+Round 6
+In total, there were 6 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Online Assessment (OA) (60 minutes): It happened on HackerRank platform. It had 2 coding questions based on graphs and dynamic programming on strings. Had to solve both questions to proceed to next round.
+
+👉 Round 2 - Hiring Manager Round (45 minutes): This round covered current work experience, cultural fit, frontend performance metrics, specific CSS animation properties, and a system design problem focusing on message functionality with tagging and UI considerations for a chat application. It also touched on canvas rendering performance.
+
+👉 Round 3 - JS, HTML, CSS and React Fundamentals (60 minutes): This round focused on core frontend fundamentals, including semantic HTML, CSS layout techniques, JavaScript execution context (call, apply, bind, event loop), React hooks and state management, and web performance optimization strategies.
+
+👉 Round 4 - System Design - Google Maps (60 minutes): This system design round focused on designing a mapping application like Google Maps. Discussions included rendering techniques, level of detail, caching strategies, API design, user interactions, and performance optimization using web workers.
+
+👉 Round 5 - System Design - WhatsApp Web (60 minutes): This system design round involved designing the web version of WhatsApp, covering aspects of real-time messaging, synchronization, and handling various chat functionalities.
+
+👉 Round 6 - Culture Fit and Collaboration (60 minutes): This round focused on behavioral aspects, including conflict resolution, handling difficult team members, and accountability for production issues. It explored past experiences and learning outcomes.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer
+Company: Morgan Stanley
+Date: 1 day ago
+Questions/Details:
+1163. Morgan Stanley Interview Experience for Software Development Engineer
+Posted 1 day ago
+ 0 Comments
+ 11 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Online Technical (Java + DSA + System Design Basics) (60 minutes): This round covered a deep dive into projects, a DSA problem on anagrams, and conceptual questions on microservices (distributed tracing, CI/CD, API Gateways).
+
+👉 Round 2 - Offline Technical + Low-Level Design + SQL (75 minutes): This round focused on core software design principles like SOLID, architectural comparisons, a DSA matrix problem, Kubernetes concepts, layered LLD, and specific project discussions.
+
+👉 Round 3 - Advanced Java + Concurrency + Managerial (60 minutes): This round delved into advanced Java topics like multithreading and transaction management, along with behavioral questions on professional conduct and problem-solving approaches, and SQL conceptual queries.
+
+👉 Round 4 - HR Round (30 minutes): This HR round covered personal details, career aspirations, salary expectations, and motivation for joining Morgan Stanley.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Engineer
+Company: Maersk
+Date: 1 day ago
+Questions/Details:
+1162. Maersk Interview Experience for Software Engineer
+Posted 1 day ago
+ 0 Comments
+ 8 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - HR + Resume Discussion (30 minutes): This introductory round focused on my professional background and a light discussion of my resume, covering current role and skills. It also included general HR behavioral questions to assess fitment.
+
+👉 Round 2 - DSA (Coin Change – DP) (60 minutes): This was a pure coding round focusing on dynamic programming. The problem involved calculating the number of ways to make a sum using given coin denominations.
+
+👉 Round 3 - DSA (Coin Change – Min Coins) (60 minutes): Another dynamic programming round, this time focusing on finding the minimum number of coins required to achieve a target sum, along with optimizations and edge case discussions.
+
+👉 Round 4 - Managerial + Low-Level System Thinking (60 minutes): This round combined a deep dive into my past projects with a technical problem on complete binary trees and discussions on continuous learning and AI concepts.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Member of Technical Staff
+Company: Oracle
+Date: 1 day ago
+Questions/Details:
+1161. Oracle Interview Experience for Member of Technical Staff
+Posted 1 day ago
+ 0 Comments
+ 40 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Technical Interview (Projects + Kafka + System Design) (60 minutes): A comprehensive technical round covering project architecture, in-depth Kafka reliability concepts (producer-consumer idempotency, retries, offsets, delivery semantics), and core system design principles like microservice scalability and fault tolerance.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer
+Company: RSA Security
+Date: 1 day ago
+Questions/Details:
+1160. RSA Security Interview Experience for Software Development Engineer
+Posted 1 day ago
+ 0 Comments
+ 14 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Technical Screening (60 minutes): This round covered project discussions, backend basics, and a medium-level DSA question.
+
+👉 Round 2 - Deep Technical (60 minutes): This round delved into backend architecture, Java fundamentals, Spring Boot, microservices, and included a coding question to validate IPv4 and a Java code output prediction.
+
+👉 Round 3 - Hiring Manager Round (60 minutes): This conversational round focused on project deep dives, daily responsibilities, tech stack, self-assessment, and API design principles.
+
+👉 Round 4 - HR Round (30 minutes): This round covered general HR topics including self-introduction, career expectations, company motivation, and compensation.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 1
+Company: BitGo
+Date: 2 days ago
+Questions/Details:
+1159. BitGo Interview Experience for Software Development Engineer 1
+Posted 2 days ago
+ 0 Comments
+ 15 Views
+Summary
+Round 1
+Round 2
+Round 3
+In total, there were 3 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Telephonic Screening (30 minutes): This light screening round focused on general profile, daily responsibilities, and foundational backend knowledge, specifically Java fundamentals and core Spring Boot concepts.
+
+👉 Round 2 - Online Assessment (DSA + Code Explanation) (60 minutes): This round included two coding problems, a graph-based shortest path problem and a Fibonacci sequence variant, followed by a logic explanation and complexity discussion.
+
+👉 Round 3 - Low-Level Design Round (60 minutes): This challenging round required designing and implementing a simplified, in-memory version of MySQL, focusing on core relational operations and adhering to OOP and SOLID principles.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer
+Company: Capital One
+Date: 2 days ago
+Questions/Details:
+1158. Capital One Interview Experience for Software Development Engineer
+Posted 2 days ago
+ 0 Comments
+ 14 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Online Assessment 1 (120 minutes): This round comprised three challenging data structures and algorithms questions, covering graphs, bit manipulation, and dynamic programming.
+
+👉 Round 2 - Online Assessment 2 (45 minutes): This round featured one dynamic programming coding problem, followed by a system design discussion focusing on a specific threading feature within a chat application.
+
+👉 Round 3 - System Design (60 minutes): I was asked to design the backend system for a threading feature inside a chat application.
+
+👉 Round 4 - Technical Round (75 minutes): This round was a detailed deep dive into the system design problem from the previous round, focusing on non-functional aspects, data modeling, data durability, and API implementation for the chat threading feature.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Mobile Developer
+Company: Uber
+Date: 2 days ago
+Questions/Details:
+1157. Uber Interview Experience for Mobile Developer
+Posted 2 days ago
+ 0 Comments
+ 10 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Online Assessment (90 minutes): This online assessment consisted of two coding problems on HackerRank. The first problem was fully solved, while the second was partially solved with a Time Limit Exceeded (TLE) error due to a missed optimization.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Staff Software Engineer
+Company: Intuit
+Date: 2 days ago
+Questions/Details:
+1156. Intuit Interview Experience for Staff Software Engineer
+Posted 2 days ago
+(Offer received)
+ 0 Comments
+ 18 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Phone Screen (75 minutes): This round started with behavioral questions, followed by a medium coding problem. The discussion then shifted to AI concepts, including AI native vs. non-AI native applications, the definition of LLMs, personal use cases for AI, and potential dangers of AI.
+
+👉 Round 2 - Craft Demo (75 minutes): This round included a presentation on my background and projects, followed by a hands-on task to extend a SpringBoot application with new APIs, focusing on class design, problem-solving, and testing methodology.
+
+👉 Round 3 - System Design (60 minutes): This round focused on the high-level design and scalability of the service developed in the Craft Demo, covering database schema design, query optimization, indexing strategies, and future feature expansion.
+
+👉 Round 4 - AI Accessor Interview (30 minutes): This interview involved discussing AI-related follow-ups for the service built in the Craft Demo, specifically an AI use case for recommendations. It covered RAG, LLM hallucination, and prompt engineering.
+
+👉 Round 5 - Hiring Manager (30 minutes): A standard behavioral interview with the VP, covering motivation for work and personal strengths.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Staff Software Engineer
+Company: LinkedIn
+Date: 2 days ago
+Questions/Details:
+1155. LinkedIn Interview Experience for Staff Software Engineer
+Posted 2 days ago
+ 0 Comments
+ 30 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Technical Interview (60 minutes): This round started with a brief self-introduction and general behavioral questions, followed by a coding challenge focusing on designing a Max Stack data structure with performance constraints.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Senior Member of Technical staff
+Company: Salesforce
+Date: 2 days ago
+Questions/Details:
+1154. Salesforce Interview Experience for Senior Member of Technical staff
+Posted 2 days ago
+(Offer received)
+ 0 Comments
+ 29 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+Round 6
+In total, there were 6 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Hiring Manager Screen (45 minutes): This round focused on discussing my work experience, role, and impact, alongside general behavioral questions.
+
+👉 Round 2 - Online Assessment (60 minutes): The online assessment included several coding problems, with one specifically focusing on finding the longest increasing subsequence.
+
+👉 Round 3 - Coding (60 minutes): This round included a linked list coding problem and theoretical discussions on AWS services like DynamoDB, Lambda, and SQS.
+
+👉 Round 4 - System Design (60 minutes): This round began with theoretical questions on REST APIs, HTTPS, and JWT, followed by a system design problem for a ticket booking service, including deep dives into database atomicity and Elasticsearch internals.
+
+👉 Round 5 - Coding / Design (60 minutes): This round was a knowledge-testing session on core data structures like Arrays, Lists, and HashMaps, caching mechanisms (LRU/LFU), and system design aspects including stock broker app components, Pub/Sub, Redis, and Kafka internals.
+
+👉 Round 6 - Behavioral (45 minutes): This round primarily consisted of behavioral questions, covering project ownership, challenges, impact, and process improvements.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Engineer
+Company: Alkira
+Date: 3 days ago
+Questions/Details:
+1153. Alkira Interview Experience for Software Engineer
+Posted 3 days ago
+ 0 Comments
+ 9 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Coding Round (120 minutes): Timer-based coding assessment ,each problem had its own countdown, after which it auto-submitted. All solutions had to be in C (including DSA problems). After finishing, an AI evaluation was done on the best-scoring solution where you had to explain it to AI, and AI will ask followups.
+
+👉 Round 2 - VP Round (60 minutes): A casual discussion about the role, Alkira’s vision and culture, and my questions for them.
+
+👉 Round 3 - Technical Round - Chief Architect (20 minutes): This round, though cut short, involved a discussion on feature designs from previous projects, focusing on tradeoffs, reasoning, and architectural choices.
+
+👉 Round 4 - Technical Round - Hiring Manager (60 minutes): This round began with an introduction and discussion of previous work, followed by coding problems on linked list manipulation and bit manipulation, alongside questions on threading and race conditions.
+
+👉 Round 5 - Technical Round - Distinguished Engineer (90 minutes): This intensive round involved a deep dive into past project designs, discussions on advanced threading concepts like atomicity, deadlocks, Compare-and-Swap (CAS), and memory ordering, concluding with a coding challenge to implement a lockless circular queue.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Staff Software Engineer
+Company: C3 AI
+Date: 3 days ago
+Questions/Details:
+1152. C3 AI Interview Experience for Staff Software Engineer
+Posted 3 days ago
+(Offer received)
+ 0 Comments
+ 11 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Hiring Manager Screen (30 minutes): This round involved discussions about my past work experience and my aspirations for a new role.
+
+👉 Round 2 - Coding (60 minutes): This round included an introduction and discussion of a project from my resume, followed by a coding problem.
+
+👉 Round 3 - Design (60 minutes): This round involved a comprehensive system design discussion for a book shop, covering both high-level and low-level aspects, database choices, scalability, and future extensibility.
+
+👉 Round 4 - Coding (60 minutes): This coding round presented a standard linked list problem focusing on reversing a sublist, with follow-up questions.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Staff Software Engineer
+Company: ServiceNow
+Date: 3 days ago
+Questions/Details:
+1151. ServiceNow Interview Experience for Staff Software Engineer
+Posted 3 days ago
+(Offer received)
+ 0 Comments
+ 20 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Hiring Manager Screen (60 minutes): This round included behavioral questions about work experience and 2 coding problems focused on Linked List implementation with specific functionalities.
+
+👉 Round 2 - Onsite Coding (60 minutes): This coding round focused on a dynamic programming problem involving stock transactions with multiple allowed trades.
+
+👉 Round 3 - Onsite Coding (60 minutes): This coding round involved finding the Lowest Common Ancestor (LCA) in a tree structure, with a follow-up on N-ary trees.
+
+👉 Round 4 - System Design (60 minutes): This system design round focused on a complex system involving content uploading, GET APIs, orchestration, scalability, monitoring, and detailed discussions on security and access controls.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Principal Member of Technical Staff
+Company: Oracle
+Date: 3 days ago
+Questions/Details:
+1150. Oracle Interview Experience for Principal Member of Technical Staff
+Posted 3 days ago
+ 0 Comments
+ 27 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Phone Screen (60 minutes): This round included behavioral questions, a standard coding problem, and a deep dive into a system design problem focusing on metrics and logging.
+
+👉 Round 2 - Onsite - System Design (60 minutes): This system design round focused on building a job scheduler, with a detailed discussion on database choices, specifically DynamoDB indexes and NoSQL rationale.
+
+👉 Round 3 - Hiring Manager (60 minutes): The hiring manager round involved a mix of behavioral questions and a system design discussion that delved into the interviewer's team projects, emphasizing flexibility and trade-off analysis.
+
+👉 Round 4 - Coding (60 minutes): This coding round presented two problems: one involved propagating flight delays through dependencies, and the other focused on finding the longest subarray with unique or k-distinct elements.
+
+👉 Round 5 - Bar Raiser (60 minutes): This Bar Raiser round featured an in-depth behavioral discussion covering the professional background, project experiences, leadership, teamwork, conflict resolution, and mentorship.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: Tekion Corp
+Date: 3 days ago
+Questions/Details:
+1149. Tekion Corp Interview Experience for Software Development Engineer 2
+Posted 3 days ago
+ 0 Comments
+ 26 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Data Structures and Algorithms Round (55 minutes): This round focused on two algorithmic problems.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: Locus
+Date: 3 days ago
+Questions/Details:
+1148. Locus Interview Experience for Software Development Engineer 2
+Posted 3 days ago
+ 0 Comments
+ 19 Views
+Summary
+Round 1
+Round 2
+Round 3
+In total, there were 3 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Online Assessment 1 (LLD + DSA) (90 minutes): This online assessment focused on Low-Level Design and Data Structures & Algorithms, involving a user and file management system. The assessment had four parts, requiring implementation of functionalities with tests for each part.
+
+👉 Round 2 - Online Assessment 2 (HLD) (60 minutes): This online assessment included a system design case study followed by 16 Multiple Choice Questions (MSQs).
+
+👉 Round 3 - Technical Interview (DSA, DB Design, HLD) (60 minutes): This technical round covered Data Structures & Algorithms, database design, and high-level system design, including a problem on finding the Kth largest element, a transactional data store design, and a music streaming application design.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer
+Company: Atlassian
+Date: 3 days ago
+Questions/Details:
+1147. Atlassian Interview Experience for Software Development Engineer
+Posted 3 days ago
+ 0 Comments
+ 21 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Coding Round (60 minutes): This round featured a complex algorithmic problem involving counting distinct infection sequences in a linear town, given initial infected houses and a spreading rule.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Staff Software Engineer
+Company: Coupang
+Date: 4 days ago
+Questions/Details:
+1146. Coupang Interview Experience for Staff Software Engineer
+Posted 4 days ago
+(Offer received)
+ 0 Comments
+ 21 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Coding Round (60 minutes): This round included generic behavioral questions followed by a coding problem focused on sorting an array with specific constraints (Dutch National Flag problem).
+
+👉 Round 2 - Hiring Manager Round (45 minutes): This round primarily focused on behavioral questions, including discussions on past challenging projects and conflict resolution. The interview ended quickly due to a misalignment between my project experience (research-based) and the hiring manager's expectation for large-scale distributed systems projects.
+
+👉 Round 3 - Coding Round (60 minutes): This coding round involved two distinct algorithmic problems: finding minimum connections between friend networks in a grid (BFS) and identifying unique shapes within a binary grid.
+
+👉 Round 4 - System Design Round (60 minutes): This round focused on the high-level design of a ride-sharing application, with an emphasis on detailed architectural depth.
+
+👉 Round 5 - Follow-up System Design Round (60 minutes): This follow-up round involved designing a blob storage system, with collaborative discussions on distributed system concepts like replication and partitioning, often referencing DynamoDB.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: Meta
+Date: 4 days ago
+Questions/Details:
+1145. Meta Interview Experience for Software Development Engineer 2
+Posted 4 days ago
+ 0 Comments
+ 21 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Screening Round (Online Assessment & Coding) (90 minutes): This round included an online assessment focused on cache design and a live coding session covering two algorithmic problems.
+
+👉 Round 2 - Coding Round (45 minutes): This round involved solving two coding problems, one on binary tree traversal and another on stream processing for median calculation.
+
+👉 Round 3 - AI Assisted Coding Round (60 minutes): This round involved a unique card game problem that required picking cards to sum to a target value, with AI assistance.
+
+👉 Round 4 - Behavioral Round (45 minutes): This round focused on various behavioral aspects, including conflict resolution, team leadership, personal challenges, and learning from mistakes.
+
+👉 Round 5 - Product Design Round (45 minutes): This round focused on designing a food delivery website, with deep dives into specific architectural components like geospatial search, keyword search, and notification mechanisms.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 3
+Company: Truemeds
+Date: 4 days ago
+Questions/Details:
+1144. Truemeds Interview Experience for Software Development Engineer 3
+Posted 4 days ago
+ 0 Comments
+ 17 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - LLD machine coding (60 minutes): Design a restaurant table reservation system that manages table bookings, walk-in customers, and waitlist. The interviewer seemed disinterested (was yawning continuously) during the interview, time was also too short to write the optimised code without using any AI agents
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer
+Company: Google
+Date: 4 days ago
+Questions/Details:
+1143. Google Interview Experience for Software Development Engineer
+Posted 4 days ago
+ 0 Comments
+ 25 Views
+Summary
+Round 1
+Round 2
+In total, there were 2 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Technical Interview - Data Structures and Algorithms (45 minutes): This round focused on a graph algorithm problem, specifically finding the cheapest flight path with a constraint on the number of stops.
+
+👉 Round 2 - Technical Interview - Problem Solving (45 minutes): This round involved a unique problem about identifying all set bits in a sparse bit array using a highly restricted range query API, with strict constraints on time and space complexity, and forbidding recursion or extra functions.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 3
+Company: JPMorgan Chase & Co.
+Date: 4 days ago
+Questions/Details:
+1142. JPMorgan Chase & Co. Interview Experience for Software Development Engineer 3
+Posted 4 days ago
+ 0 Comments
+ 19 Views
+Summary
+Round 1
+Round 2
+Round 3
+In total, there were 3 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - System Design (60 minutes): This round focused on designing a movie ticket booking system, covering its high-level architecture, low-level object design, and database schema, along with scaling considerations. It also included some medium-level technical questions.
+
+👉 Round 2 - Managerial Round (45 minutes): This round focused on behavioral aspects, particularly handling conflicts with colleagues and discussing previous project experiences.
+
+👉 Round 3 - Coding and Problem Solving (60 minutes): Medium level question based on trees
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: Microsoft
+Date: 4 days ago
+Questions/Details:
+1141. Microsoft Interview Experience for Software Development Engineer 2
+Posted 4 days ago
+ 0 Comments
+ 34 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Technical Round 1 (60 minutes): This round included a medium-difficulty Data Structures and Algorithms question focusing on hashmaps.
+
+👉 Round 2 - Technical Round 2 (60 minutes): This technical round required implementing a thread pool, with a brief discussion on the approach for another DSA problem.
+
+👉 Round 3 - System Design Round (60 minutes): This round focused on the high-level design of a file processing system, including concepts such as OCR, data chunking, storage mechanisms, and memory trade-offs.
+
+👉 Round 4 - Hiring Manager / Bar Raiser Round (60 minutes): This round covered the design of a bank teller system and a behavioral question. The interviewer appeared disengaged due to time zone differences.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 3
+Company: eBay
+Date: 4 days ago
+Questions/Details:
+1140. eBay Interview Experience for Software Development Engineer 3
+Posted 4 days ago
+(Offer received)
+ 0 Comments
+ 23 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - 1st Technical Round (60 minutes): This round began with a deep dive into past projects and design decisions, followed by a classic coding problem.
+
+👉 Round 2 - 2nd Technical Round (60 minutes): This round was purely problem-solving where 2 coding questions were asked.
+
+👉 Round 3 - 3rd Technical Round (60 minutes): This problem-solving round focused on system design, specifically the implementation of a URL shortening service and its associated considerations.
+
+👉 Round 4 - 4th Technical Round (60 minutes): This round involved a project-focused discussion, behavioral questions about career motivations, and a well-known coding challenge.
+
+👉 Round 5 - Director Round (45 minutes): This conversational round was interest-based, with a focus on operating systems and a discussion on my favorite subject DSA. A few situational and behavioral questions were also asked.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Senior Software Engineer
+Company: Bloomberg LP
+Date: 4 days ago
+Questions/Details:
+1139. Bloomberg LP Interview Experience for Senior Software Engineer
+Posted 4 days ago
+ 0 Comments
+ 24 Views
+Summary
+Round 1
+Round 2
+In total, there were 2 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Virtual Onsite (90 minutes): This round began with a 25-minute discussion on resume and experience with scaling. This was followed by a technical question involving a graph BFS problem with frequency counting at a specific level.
+
+👉 Round 2 - Low-Level Design (LLD) (60 minutes): 2 problems were asked in this round. They were based on SOLID Principles, Databases, Design Patterns, Low-Level Design (LLD), Extensibility, Clean Coding, Class Design, SQL
+Discussion
+Login to add comment!
+----------------------------------------
+Title: SDE Intern
+Company: Groww
+Date: 5 days ago
+Questions/Details:
+1138. Groww Interview Experience for SDE Intern
+Posted 5 days ago
+(Offer received)
+ 0 Comments
+ 14 Views
+Summary
+Round 1
+Round 2
+Round 3
+In total, there were 3 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Assignment (180 minutes): This round involved a practical coding assignment to build a stock broker application using React Native.
+
+👉 Round 2 - Technical Discussion Round (60 minutes): This round included theoretical discussions on React and React Native internals, followed by a live coding challenge to build a To-Do list application.
+
+👉 Round 3 - Hiring Manager Round (45 minutes): This round focused on the internship experience, discussing past work with Expo, architectural comparisons, personal strengths and weaknesses, motivations for joining Groww, and general approach to task management.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 1
+Company: Microsoft
+Date: 5 days ago
+Questions/Details:
+1137. Microsoft Interview Experience for Software Development Engineer 1
+Posted 5 days ago
+(Offer received)
+ 0 Comments
+ 19 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Online Assessment (90 minutes): This round included two challenging coding problems. One involved difference arrays and another was a hard problem on heaps.
+
+👉 Round 2 - Data Structures and Algorithms Round (90 minutes): This round comprised three data structures and algorithms questions. One involved finding the longest safest path in a string with blockers, and another was a string matching problem using two pointers. The third question's details were not remembered.
+
+👉 Round 3 - Low-Level Design Round (75 minutes): This round focused on the low-level design of a cache, emphasizing object-oriented principles, SOLID principles, and a strategy pattern for eviction policy, with a specific implementation of LRU. Code quality was also a key aspect.
+
+👉 Round 4 - Architectural Assessment Round (60 minutes): This round was conducted by a senior engineering manager and was exclusively behavioral, covering project experiences, hackathon participation, and other standard situational questions, which were expected to be answered using the STAR technique.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer
+Company: Info Edge India Ltd
+Date: 5 days ago
+Questions/Details:
+1136. Info Edge India Ltd Interview Experience for Software Development Engineer
+Posted 5 days ago
+ 0 Comments
+ 11 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Coding Round (60 minutes): This round focused on a coding problem to find the k most frequent elements, with a follow-up discussion on optimizing its time complexity using specialized sorting algorithms like bucket sort.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Senior Software Engineer
+Company: LinkedIn
+Date: 5 days ago
+Questions/Details:
+1135. LinkedIn Interview Experience for Senior Software Engineer
+Posted 5 days ago
+ 0 Comments
+ 46 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+Round 6
+In total, there were 6 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Phone Screen (60 minutes): This round began with foundational concepts from Operating Systems, followed by two data structures and algorithms questions, one of which was a classic graph problem.
+
+👉 Round 2 - Coding Round 1 (60 minutes): This coding round focused on data structure design, featuring a hard-level problem requiring constant-time operations for various functionalities.
+
+👉 Round 3 - Coding Round 2 (60 minutes): This round involved two data structures and algorithms questions, including a graph-based problem on course scheduling and a tree-based problem concerning leaf nodes.
+
+👉 Round 4 - System Design (60 minutes): A real-world system design problem was presented, focusing on designing a scalable key-value store, covering its components, data partitioning, replication strategies, and consistency models.
+
+👉 Round 5 - Hiring Manager Round (45 minutes): This round primarily involved a deep dive into the past projects and professional responsibilities, followed by a general behavioral discussion.
+
+👉 Round 6 - Technical Communication (45 minutes): This round assessed the technical communication skills through a discussion about a past project.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 1
+Company: Microsoft
+Date: 5 days ago
+Questions/Details:
+1134. Microsoft Interview Experience for Software Development Engineer 1
+Posted 5 days ago
+(Offer received)
+ 0 Comments
+ 23 Views
+Summary
+Round 1
+Round 2
+Round 3
+In total, there were 3 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Data Structures and Algorithms Round (45 minutes): This round focused on advanced data structures and algorithms, specifically involving string manipulation and pathfinding with constraints.
+
+👉 Round 2 - Low-Level Design Round (60 minutes): This round focused on object-oriented design principles and a detailed low-level design of a cache system, including its eviction policies.
+
+👉 Round 3 - Architectural and Behavioral Round (45 minutes): This round was entirely behavioral, covering past project experiences, hackathons, and general leadership principles scenarios.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Lead Software Development Engineer
+Company: Razorpay
+Date: 5 days ago
+Questions/Details:
+1133. Razorpay Interview Experience for Lead Software Development Engineer
+Posted 5 days ago
+(Offer received)
+ 0 Comments
+ 34 Views
+Summary
+Round 1
+Round 2
+Round 3
+In total, there were 3 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - System Design (45 minutes): This round focused on the high-level design of a job scheduling system.
+
+👉 Round 2 - Machine Coding (120 minutes): This round required a fully functional implementation of a load balancer, including configuration APIs and health checks.
+
+👉 Round 3 - System Design + LLD (45 minutes): This round involved designing a collaborative document editor, focusing on storage, database schema, real-time synchronization, and access control.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 3
+Company: Amazon
+Date: 6 days ago
+Questions/Details:
+1132. Amazon Interview Experience for Software Development Engineer 3
+Posted 6 days ago
+ 0 Comments
+ 36 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Data Structures and Algorithms Round (60 minutes): This round focused on data structures and algorithms. It began with a JSON string validation problem, followed by a binary search tree problem involving paths with a target sum. It was a challenging round due to perceived ambiguity and time constraints.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Senior User Interface Developer
+Company: Arctic Wolf
+Date: 6 days ago
+Questions/Details:
+1131. Arctic Wolf Interview Experience for Senior User Interface Developer
+Posted 6 days ago
+ 0 Comments
+ 9 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+In total, there were 5 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - JavaScript Fundamentals (60 minutes): This round focused on core JavaScript concepts, including closures, asynchronous programming with Promises, event loop mechanics, and variable scoping, often through code explanation and polyfill implementations.
+
+👉 Round 2 - Machine Coding (60 minutes): This round involved building a functional To-Do List application with specific features, followed by an additional JavaScript output prediction question upon early completion.
+
+👉 Round 3 - System Design (60 minutes): This round included discussions on past projects, UI optimization techniques like virtualization and lazy loading, and architectural patterns such as micro-frontends.
+
+👉 Round 4 - Hiring Manager (60 minutes): This round focused on the candidate's career journey, system design concepts like message queues and role-based authentication, and general behavioral and cultural fit questions.
+
+👉 Round 5 - Final Tech Round (60 minutes): This round began with a project discussion, focusing on a Gatsby to React migration and collaboration aspects, followed by a React coding challenge related to asynchronous behavior, which was not described in sufficient detail.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 3
+Company: JPMorgan Chase & Co.
+Date: 6 days ago
+Questions/Details:
+1130. JPMorgan Chase & Co. Interview Experience for Software Development Engineer 3
+Posted 6 days ago
+ 0 Comments
+ 23 Views
+Summary
+Round 1
+Round 2
+Round 3
+In total, there were 3 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Coding Round (60 minutes): This round had multiple coding questions. The interviewer focused on main logic rather than full code for most problems.
+
+👉 Round 2 - Low-Level Design and Java Fundamentals (60 minutes): This round deeply explored Java fundamentals, concurrency control, and code review/debugging, alongside discussing architectural choices made in previous projects.
+
+👉 Round 3 - High-Level Design and Behavioral (60 minutes): This round combined a high-level system design problem focusing on document validation and storage, with behavioral questions about career motivation and work preferences.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: LinkedIn
+Date: 6 days ago
+Questions/Details:
+1129. LinkedIn Interview Experience for Software Development Engineer 2
+Posted 6 days ago
+ 0 Comments
+ 46 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Technical Phone Screen (60 minutes): This technical phone screen began with an introduction, followed by fundamental Computer Science concepts including operating systems, databases, and data structures. The round concluded with a multi-part coding problem focused on calculating nested list sums with various traversal strategies.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Senior Software Engineer
+Company: PayPal
+Date: 6 days ago
+Questions/Details:
+1128. PayPal Interview Experience for Senior Software Engineer
+Posted 6 days ago
+(Offer received)
+ 0 Comments
+ 28 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+Round 5
+Round 6
+In total, there were 6 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Online HackerRank Assessment (90 minutes): This round included coding challenges focused on string manipulation, JavaScript class implementation, and a React UI task for a cart management system.
+
+👉 Round 2 - DSA Round (45 minutes): This round focused on advanced data structures and algorithms, including dynamic programming, stack design, and graph algorithms.
+
+👉 Round 3 - System Design Round (45 minutes): This round focused on designing a Payment Gateway System, covering its architecture, payment flow, and ledger system.
+
+👉 Round 4 - Tech Specialization Round (60 minutes): This round assessed React internals, pseudocode for the Diffing Algorithm, and a React-based currency converter implementation.
+
+👉 Round 5 - Bar Raiser Round (45 minutes): This behavioral round focused on leadership principles, past project experiences, conflict resolution, mentorship, and demonstrating technical ownership.
+
+👉 Round 6 - Final Bar Raiser Round - DSA + JavaScript (45 minutes): This final round focused on a challenging string manipulation DSA problem and a JavaScript deep copy implementation with a unique array modification requirement.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: Microsoft
+Date: 1 week ago
+Questions/Details:
+1127. Microsoft Interview Experience for Software Development Engineer 2
+Posted 1 week ago
+(Offer received)
+ 0 Comments
+ 24 Views
+Summary
+Round 1
+Round 2
+Round 3
+Round 4
+In total, there were 4 rounds of interviews evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - Coding and Problem Solving (60 minutes): This round focused on designing a custom data structure for frequency tracking with specific retrieval and removal logic.
+
+👉 Round 2 - Low-Level Design (LLD) (60 minutes): This round involved the low-level design and implementation discussion for the classic game, Snake and Ladder.
+
+👉 Round 3 - System Design (60 minutes): This round focused on designing a residential elevator control system, with detailed functional, safety, and optimization requirements.
+
+👉 Round 4 - AA round (45 minutes): This round, led by a senior interviewer, covered past project experiences, problem-solving challenges, and a live coding task.
+Discussion
+Login to add comment!
+----------------------------------------
+Title: Software Development Engineer 2
+Company: Amazon
+Date: 1 week ago
+Questions/Details:
+1126. Amazon Interview Experience for Software Development Engineer 2
+Posted 1 week ago
+ 0 Comments
+ 31 Views
+Summary
+Round 1
+In total, there were 1 round of interview evaluating various skills as mentioned in each round below:
+
+👉 Round 1 - LLD (60 minutes): Design Notification system
+Discussion
+Login to add comment!
+----------------------------------------
