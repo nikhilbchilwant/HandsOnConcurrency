@@ -111,19 +111,12 @@ public class TokenBucketRateLimiter {
     /**
      * TODO: Try to acquire one token, returning immediately.
      * 
-     * 🔑 HINT - Implementation pattern:
-     *   1. synchronized(this) - must be thread-safe!
-     *   2. Refill tokens based on elapsed time
-     *   3. Check if at least 1 token available
-     *   4. If yes, consume token and return true
-     *   5. If no, return false
+     * ⚠️ COMMON MISTAKES:
+     * 1. Using a background thread for refilling (overcomplicated!)
+     * 2. Not synchronizing access to shared state
+     * 3. Forgetting to update lastRefillTimestamp
      * 
-     * 📝 NOTE: The key insight is LAZY REFILL:
-     *   long now = System.currentTimeMillis();
-     *   long elapsed = now - lastRefillTimestamp;
-     *   double tokensToAdd = elapsed * refillRatePerMs;
-     *   availableTokens = Math.min(capacity, availableTokens + tokensToAdd);
-     *   lastRefillTimestamp = now;
+     * 💡 THINK: Use LAZY REFILL - calculate tokens when needed, not continuously.
      * 
      * @return true if token acquired, false if rate limited
      */

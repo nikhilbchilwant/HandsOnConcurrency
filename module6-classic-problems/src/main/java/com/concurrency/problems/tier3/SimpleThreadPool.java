@@ -178,11 +178,10 @@ public class SimpleThreadPool {
     /**
      * TODO: The Worker thread implementation.
      * 
-     * 🔑 HINT: The run() method should:
-     *   1. Loop while not shutdown (or has pending tasks)
-     *   2. Take a task from the queue (blocks if empty)
-     *   3. Execute the task
-     *   4. Handle exceptions gracefully (don't let one bad task kill the worker!)
+     * ⚠️ COMMON MISTAKES:
+     * 1. Letting exceptions kill the worker thread
+     * 2. Not checking shutdown flag after interrupt
+     * 3. Busy-waiting instead of using blocking take()
      */
     private class Worker extends Thread {
         

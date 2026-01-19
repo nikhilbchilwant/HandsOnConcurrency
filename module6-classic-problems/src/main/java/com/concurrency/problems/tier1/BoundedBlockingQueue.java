@@ -101,21 +101,12 @@ public class BoundedBlockingQueue<E> {
     /**
      * TODO: Add an element, blocking if the queue is full.
      * 
-     * 🔑 HINT - The correct pattern:
+     * ⚠️ COMMON MISTAKES:
+     * 1. Using IF instead of WHILE for wait condition (spurious wakeups!)
+     * 2. Using notify() instead of notifyAll() (wrong thread might wake)
+     * 3. Not handling InterruptedException properly
      * 
-     *   synchronized (this) {
-     *       while (count == items.length) {  // WHILE, not IF!
-     *           wait();  // Release lock and wait
-     *       }
-     *       items[tail] = item;
-     *       tail = (tail + 1) % items.length;  // Circular increment
-     *       count++;
-     *       notifyAll();  // Wake up waiting consumers
-     *   }
-     * 
-     * 💡 THINK: Why must we use WHILE instead of IF?
-     *   1. Spurious wakeups: Thread can wake without notify
-     *   2. Multiple consumers: Another consumer might take the item first
+     * 💡 THINK: Why must we use WHILE instead of IF for wait()?
      * 
      * @param item the element to add
      * @throws InterruptedException if the thread is interrupted while waiting
@@ -127,6 +118,7 @@ public class BoundedBlockingQueue<E> {
         // Step 3: Update tail (circular)
         // Step 4: Increment count
         // Step 5: notifyAll()
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -152,7 +144,7 @@ public class BoundedBlockingQueue<E> {
         // Step 5: Decrement count
         // Step 6: notifyAll()
         // Step 7: Return item
-        return null;
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
