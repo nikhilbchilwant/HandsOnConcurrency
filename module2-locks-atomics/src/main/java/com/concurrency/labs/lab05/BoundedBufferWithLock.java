@@ -58,14 +58,7 @@ public class BoundedBufferWithLock<E> {
      *   - This is more efficient than waking all of them!
      */
     public void put(E item) throws InterruptedException {
-        lock.lock();
-        try {
-            // TODO: While full, await on notFull condition
-            // TODO: Add item
-            // TODO: Signal notEmpty condition (wake one consumer)
-        } finally {
-            lock.unlock();
-        }
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -73,15 +66,7 @@ public class BoundedBufferWithLock<E> {
      */
     @SuppressWarnings("unchecked")
     public E take() throws InterruptedException {
-        lock.lock();
-        try {
-            // TODO: While empty, await on notEmpty condition
-            // TODO: Remove item
-            // TODO: Signal notFull condition (wake one producer)
-            return null;
-        } finally {
-            lock.unlock();
-        }
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     public int size() {

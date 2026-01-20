@@ -76,13 +76,7 @@ public class EvenOddPrinter {
      * 💡 THINK: How do you coordinate with the even thread?
      */
     public synchronized void printOdd() throws InterruptedException {
-        // TODO: Implement odd number printing
-        // Step 1: Loop while current <= max
-        // Step 2: Wait while it's not odd's turn
-        // Step 3: Print current (which is odd)
-        // Step 4: Increment current
-        // Step 5: Set isOddTurn = false
-        // Step 6: notifyAll() to wake even thread
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -91,10 +85,7 @@ public class EvenOddPrinter {
      * 📝 NOTE: Mirror of printOdd() but waits when isOddTurn is true.
      */
     public synchronized void printEven() throws InterruptedException {
-        // TODO: Implement even number printing
-        // Same pattern as printOdd() but:
-        // - Wait while isOddTurn is TRUE
-        // - After printing, set isOddTurn = true
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**

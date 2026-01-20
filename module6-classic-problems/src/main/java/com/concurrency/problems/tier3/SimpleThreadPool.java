@@ -112,11 +112,6 @@ public class SimpleThreadPool {
         this.workers = new ArrayList<>(poolSize);
         
         // TODO: Create and start worker threads
-        for (int i = 0; i < poolSize; i++) {
-            Worker worker = new Worker("Worker-" + i);
-            workers.add(worker);
-            worker.start();
-        }
     }
     
     /**
@@ -137,12 +132,7 @@ public class SimpleThreadPool {
         // 💡 THINK: Should we use offer() or put()?
         //   - offer(): Returns false if queue is full
         //   - put(): Blocks until space available
-        try {
-            taskQueue.put(task);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            throw new IllegalStateException("Interrupted while submitting task", e);
-        }
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -161,9 +151,7 @@ public class SimpleThreadPool {
         isShutdown = true;
         
         // TODO: Interrupt all workers so they can exit
-        for (Worker worker : workers) {
-            worker.interrupt();
-        }
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -192,30 +180,7 @@ public class SimpleThreadPool {
         @Override
         public void run() {
             // TODO: Implement the worker loop
-            while (!isShutdown || !taskQueue.isEmpty()) {
-                try {
-                    // 📝 NOTE: take() blocks until a task is available
-                    Runnable task = taskQueue.take();
-                    
-                    // Execute the task
-                    // ⚠️ AVOID: Letting exceptions propagate and kill the worker!
-                    try {
-                        task.run();
-                    } catch (Exception e) {
-                        // Log but don't rethrow - worker should continue
-                        System.err.println("Task failed: " + e.getMessage());
-                    }
-                    
-                } catch (InterruptedException e) {
-                    // Interrupted - check shutdown flag
-                    // 💡 THINK: Should we restore the interrupt flag?
-                    // Usually yes, but here we're checking isShutdown anyway
-                    if (isShutdown) {
-                        break;
-                    }
-                }
-            }
-            System.out.println(getName() + " terminated");
+            throw new UnsupportedOperationException("TODO: Implement this method");
         }
     }
     

@@ -98,8 +98,44 @@ class RaceConditionTest {
         int expected = threads * incrementsPerThread;
         int actual = counter.getCount();
         
-        // TODO: Once you implement SynchronizedCounter correctly,
-        // this assertion should ALWAYS pass
-        // assertEquals(expected, actual, "No updates should be lost with proper synchronization");
+        assertEquals(expected, actual, "No updates should be lost with proper synchronization");
+    }
+
+    /**
+     * TODO: After implementing AtomicCounter, this test should ALWAYS pass.
+     */
+    @RepeatedTest(5)
+    void testAtomicCounter_shouldNotLoseUpdates() throws InterruptedException {
+        AtomicCounter counter = new AtomicCounter();
+        int threads = 100;
+        int incrementsPerThread = 1000;
+
+        ExecutorService executor = Executors.newFixedThreadPool(threads);
+        CountDownLatch startLatch = new CountDownLatch(1);
+        CountDownLatch endLatch = new CountDownLatch(threads);
+
+        for (int i = 0; i < threads; i++) {
+            executor.submit(() -> {
+                try {
+                    startLatch.await();
+                    for (int j = 0; j < incrementsPerThread; j++) {
+                        counter.increment();
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                } finally {
+                    endLatch.countDown();
+                }
+            });
+        }
+
+        startLatch.countDown();
+        endLatch.await();
+        executor.shutdown();
+
+        int expected = threads * incrementsPerThread;
+        int actual = counter.getCount();
+
+        assertEquals(expected, actual, "No updates should be lost with proper atomic operations");
     }
 }
