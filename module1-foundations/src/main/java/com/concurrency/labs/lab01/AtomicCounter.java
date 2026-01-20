@@ -31,11 +31,11 @@ public class AtomicCounter {
      */
     public void increment() {
         // TODO: Use atomic operation instead of count++
-        count++;
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     public int getCount() {
         // TODO: Return the atomic value
-        return count;
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
 }

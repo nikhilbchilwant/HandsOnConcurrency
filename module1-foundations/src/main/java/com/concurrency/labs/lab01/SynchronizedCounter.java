@@ -28,7 +28,7 @@ public class SynchronizedCounter {
      */
     public void increment() {
         // TODO: Add synchronization here
-        count++;
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -39,6 +39,6 @@ public class SynchronizedCounter {
      */
     public int getCount() {
         // TODO: Consider if synchronization is needed here
-        return count;
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
 }
