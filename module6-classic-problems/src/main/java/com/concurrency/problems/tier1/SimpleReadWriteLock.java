@@ -87,18 +87,7 @@ public class SimpleReadWriteLock {
      * 📝 NOTE: Without the writeRequests check, readers could starve writers!
      */
     public synchronized void lockRead() throws InterruptedException {
-        // TODO: Implement read lock acquisition
-        // Step 1: While there are writers OR waiting writers, wait
-        // Step 2: Increment readers count
-        
-        // ⚠️ AVOID: This simple version allows reader starvation of writers:
-        // while (writers > 0) { wait(); }
-        // 
-        // Better: Also check writeRequests to give writers priority
-        while (writers > 0 || writeRequests > 0) {
-            wait();
-        }
-        readers++;
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -107,11 +96,7 @@ public class SimpleReadWriteLock {
      * 📝 NOTE: When the last reader unlocks, notify waiting writers!
      */
     public synchronized void unlockRead() {
-        // TODO: Implement read lock release
-        readers--;
-        if (readers == 0) {
-            notifyAll(); // Wake up waiting writers
-        }
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -125,28 +110,14 @@ public class SimpleReadWriteLock {
      *   This signals to lockRead() that a writer is waiting!
      */
     public synchronized void lockWrite() throws InterruptedException {
-        // TODO: Implement write lock acquisition
-        writeRequests++;
-        try {
-            while (readers > 0 || writers > 0) {
-                wait();
-            }
-            writers++;
-        } finally {
-            writeRequests--;
-        }
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
      * TODO: Release the write lock.
      */
     public synchronized void unlockWrite() {
-        // TODO: Implement write lock release
-        writers--;
-        notifyAll(); // Wake up ALL waiting readers and writers
-        
-        // 💡 THINK: Could we use notify() instead of notifyAll()?
-        // What would happen if we woke only one waiting thread?
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     // Diagnostic methods
