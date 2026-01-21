@@ -124,8 +124,8 @@ public class TokenBucketRateLimiter {
         // TODO: Implement lazy refill + token acquisition
         
         // Step 1: Calculate elapsed time since last refill
-        long now = System.currentTimeMillis();
-        long elapsed = now - lastRefillTimestamp;
+        // long now = System.currentTimeMillis();
+        // long elapsed = now - lastRefillTimestamp;
         
         // Step 2: Add tokens based on elapsed time (capped at capacity)
         // 💡 THINK: Why cap at capacity? To prevent token accumulation during idle periods
@@ -134,7 +134,7 @@ public class TokenBucketRateLimiter {
         
         // Step 4: Update timestamp
         
-        return false; // TODO: Replace with actual logic
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -149,7 +149,7 @@ public class TokenBucketRateLimiter {
     public synchronized boolean tryAcquire(int tokens) {
         // TODO: Implement acquiring multiple tokens
         // ⚠️ AVOID: Acquiring partial tokens - it should be all or nothing!
-        return false;
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -167,6 +167,7 @@ public class TokenBucketRateLimiter {
     public synchronized void acquire() throws InterruptedException {
         // TODO: Implement blocking acquire
         // 💡 THINK: Is there a race condition if multiple threads wait?
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**

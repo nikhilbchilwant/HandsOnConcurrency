@@ -1,0 +1,661 @@
+Title: Interview Experience at Walmart Global Tech for SWE-III position
+Date: 2025-03-22T07:04:17Z
+Link: https://dev.to/kriti_pare/interview-experience-at-walmart-global-tech-for-swe-iii-position-k95
+Details:
+The Interview Process
+
+There were three technical rounds, followed by an HR discussion:
+
+Round 1: Technical — DSA + Frontend
+Round 2: Technical — DSA + Fullstack
+Round 3: Technical + Managerial — System Design
+
+I will cover the third round in detail in this article.
+
+Round 3: System Design
+
+This round delved deep into my technical skills and experience, focusing on the specifics of my resume. The hiring manager explored the technologies and challenges I had encountered in past projects, aiming to understand my problem-solving approach and my ability to articulate both high-level and low-level system perspectives.
+
+1. Resume Walkthrough
+
+We began by discussing my resume, providing an opportunity to highlight my actual contributions. The interviewer inquired about several projects, emphasizing the challenges I faced and the solutions I implemented. The discussion centered not just on what I did, but also on the reasoning behind my decisions and the technical problems I addressed.
+
+To illustrate the architecture of one of my projects, I used Excalidraw.
+
+2. System Design Problem
+
+Following the resume discussion, we moved on to a system design problem.
+
+I utilized the RADIO framework to structure my thought process. Starting with a High-Level Design (HLD), I outlined the overall system flow and the interactions between components. As we delved deeper, I transitioned into Low-Level Design (LLD), particularly focusing on the interaction between the front end (specifically React components) and the backend APIs.
+
+A critical aspect was distinguishing between Functional and Non-Functional Requirements, explaining which features I would prioritize, especially concerning performance, scalability, and fault tolerance.
+
+Specific areas of interest included:
+
+Client-Server Interaction: Discussing the choice between polling and WebSockets.
+Infrastructure Management: Addressing API gateways, load balancing, and rate limiting.
+Database Optimization: Covering indexing, query optimization, and sharding strategies.
+3. Performance Optimization
+
+With the system design established, we shifted focus to performance optimizations. This segment was both engaging and challenging, as it involved strategies to enhance user experience and ensure system resilience under high traffic conditions.
+
+Key performance optimization strategies discussed:
+
+Lazy Loading: Loading resources only when necessary to improve initial page load times.
+Resource Hinting: Preloading critical resources (e.g., fonts, scripts, images) to expedite perceived load times.
+Reducing Requests: Minimizing HTTP requests by bundling assets (JS, CSS) and employing techniques like image compression or serving images in modern formats (e.g., WebP).
+Render Optimization: Reducing render-blocking resources by using async or defer for script loading and implementing CSS-in-JS to decrease the number of CSS files, thereby enhancing initial render performance and preventing unnecessary reflows/repaints.
+Virtualization of Large Lists: Implementing list virtualization for applications with extensive datasets or lengthy lists (such as social media feeds or tables) to render only the visible portion, conserving memory and accelerating rendering.
+Improving Lighthouse Metrics: Emphasizing metrics like First Contentful Paint (FCP), Largest Contentful Paint (LCP), and Time to Interactive (TTI) to assess and improve performance.
+4. Security Considerations
+
+The interview then transitioned to security aspects, focusing on common web vulnerabilities and their prevention. We discussed protecting a web application against threats like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF). Practical solutions included:
+
+Sanitizing User Input: Preventing malicious scripts (XSS) by sanitizing user inputs.
+Using Tokens: Implementing tokens to prevent unauthorized requests (CSRF).
+5. Behavioral Questions
+
+The final segment of the interview comprised behavioral questions, assessing my approach to teamwork, problem-solving, and handling challenging situations. These situational questions were akin to those typically encountered in managerial rounds.
+
+Key Takeaways
+Know Your Projects Inside Out: Be prepared to discuss your projects in detail, including the challenges faced and the decisions made.
+Structure Your Thoughts: Utilize frameworks like RADIO to organize your approach to system design problems.
+Prioritize Performance and Security: Demonstrate awareness of performance optimization techniques and security best practices.
+Be Ready for Behavioral Questions: Reflect on past experiences to effectively address situational questions.
+
+Note: This article is based on my personal experience and may not represent the exact process for all candidates.
+----------------------------------------
+Title: Documenting the Journey: Preparing for a Senior UI Engineer Role at ServiceNow
+Date: 2025-12-29T12:18:22Z
+Link: https://dev.to/sunny7899/documenting-the-journey-preparing-for-a-senior-ui-engineer-role-at-servicenow-81a
+Details:
+There’s a moment in every engineering career where you pause—not because you’re stuck, but because you’re leveling up.
+This blog is about one of those moments for me.
+
+Recently, I started preparing for a Senior Software Engineer – UI role at ServiceNow. Instead of rushing through prep, I decided to slow down and document the journey—the prompts, the reflections, and the story behind my work.
+
+This post is both a record for myself and a guide for anyone preparing for a similar transition.
+
+Why I Decided to Document This
+
+Interview prep can feel transactional:
+
+Memorize answers
+Practice talking points
+Hope it clicks
+
+But this role made me realize something:
+
+This wasn’t just interview prep. This was a reflection of my career so far.
+
+ServiceNow’s focus on AI-powered UX, observability, scale, and craftsmanship forced me to connect dots across my experience—from building dashboards and APIs to integrating ML and designing for trust.
+
+So instead of just “preparing answers,” I framed everything as a story.
+
+The Prompts That Shaped the Story
+
+These were the prompts I worked through—and honestly, they map really well to how senior engineers think.
+
+1. Short Introduction (2 minutes)
+
+This wasn’t about listing tools.
+
+It was about answering:
+
+What problems do I enjoy solving?
+How does my work create impact?
+Why does my experience make sense now?
+
+I focused on:
+
+Building customer-facing UI
+Turning complex systems into simple experiences
+Using AI not as a buzzword, but as a practical tool
+
+The goal wasn’t to sound impressive—it was to sound clear.
+
+2. What Do I Know About ServiceNow? (30 seconds)
+
+This forced me to zoom out.
+
+Not just:
+
+“They do workflow automation.”
+
+But:
+
+They connect people, systems, and processes
+They’re investing deeply in AI-native experiences
+Observability isn’t just metrics—it’s insight and action
+
+This helped me align my past work with where the platform is going.
+
+3. Why This Role, Why Now?
+
+This was one of the most important reflections.
+
+I realized I wasn’t leaving my current role because of dissatisfaction.
+I was leaving because I wanted:
+
+More product-driven engineering
+More scale
+A place where UI, AI, and platform thinking intersect
+
+That clarity alone boosted my confidence.
+
+4. What I Want in My Next Opportunity
+
+This wasn’t about perks or titles.
+
+I wrote down three things:
+
+Ownership from idea to delivery
+Strong engineering culture (reviews, quality, reliability)
+Space to grow—technically and as a mentor
+
+Simple. Honest. Grounded.
+
+5. A Real Challenge (Not a Perfect Story)
+
+Instead of a “hero story,” I picked a messy one:
+
+Inconsistent data
+Tight timelines
+Evolving requirements
+Cross-team friction
+
+I talked about:
+
+Trade-offs
+Decisions
+What broke
+What I learned
+
+That reflection reminded me:
+
+Senior engineering isn’t about avoiding problems—it’s about navigating them calmly.
+
+6. Questions I Ask Them
+
+This flipped the dynamic.
+
+Instead of trying to impress, I got curious:
+
+What problems matter most right now?
+How does AI actually show up in the product?
+How do teams collaborate end-to-end?
+
+It made the conversation feel mutual—not one-sided.
+
+What This Process Taught Me
+
+A few things really stood out:
+
+Good interviews are storytelling exercises
+AI experience matters most when tied to user trust
+UI engineering at scale is about empathy, not pixels
+Preparation is confidence—not memorization
+
+Most importantly, I realized I already had the experience.
+I just needed to frame it clearly.
+
+Why I’m Keeping This Documented
+
+Careers are long. It’s easy to forget:
+
+Why you chose certain paths
+How much you’ve learned
+What kind of engineer you’re becoming
+
+This blog is a checkpoint.
+
+Whether or not this specific role works out, the process itself already paid off. I’m sharper, clearer, and more intentional than I was before.
+
+And that’s a win.
+
+Final Thought
+
+If you’re preparing for a senior role:
+
+Don’t just study the job description
+Study your own journey
+
+There’s more alignment there than you think.
+
+End of entry.
+----------------------------------------
+Title: System Design : Calendar App
+Date: 2026-01-06T20:41:05Z
+Link: https://dev.to/shalini_goyall_01f98891cf/system-design-calendar-app-1lii
+Details:
+Functional Requirement
+
+create event , modify event , cancel event
+user should be able to view calendar daily , weekly or yearly
+user should be able to set tup recurring meeting
+send notification for any change via email.
+
+Non functional requirement
+
+High availability >> consistency ( eventaul consitency for syncing events)
+should support 1B User
+low latency to view calendar.
+read >> write
+
+Models
+
+User
+event
+Recurrence
+
+APIs
+
+POST /events/
+{
+   title 
+   userId ( creator)
+   userIds []
+   start time
+   end time
+   json blob content - > video call link , description
+   - recurrence schedule > weekly , biweekly , monhtly or yearly
+}
+
+GET / events/startDay=?&&endDay=? return -> List of events
+
+High Level Design
+
+Deep Dives
+
+1. How to store data into DB for daily or recurring events. Explain it with example.
+
+Event Creation & Storage
+
+Case 1: Simple (One-Time) Event
+
+Example
+
+Doctor Appointment
+Jan 10, 3:00–4:00 PM (UTC)
+
+events table (single row)
+
+
+| event_id | owner_id | title              | start_time_utc   | end_time_utc     | rrule | tz  | version |
+| -------- | -------- | ------------------ | ---------------- | ---------------- | ----- | --- | ------- |
+| evt_101  | user_1   | Doctor Appointment | 2025-01-10 15:00 | 2025-01-10 16:00 | NULL  | UTC | 1       |
+
+GET Behavior
+Row is returned
+Rendered directly
+No expansion needed
+
+Case 2: Recurring Event (Weekly)
+
+Example
+
+Team Sync
+Every Monday, 10–11 AM
+Starting Jan 6, 2025
+
+
+`events` table (still ONE row)
+
+| event_id | owner_id | title     | start_time_utc   | end_time_utc     | rrule                | tz  | version |
+| -------- | -------- | --------- | ---------------- | ---------------- | -------------------- | --- | ------- |
+| evt_201  | user_1   | Team Sync | 2025-01-06 10:00 | 2025-01-06 11:00 | FREQ=WEEKLY;BYDAY=MO | UTC | 1       |
+
+
+GET Behavior (Week View)
+
+Fetch base row
+Expand rule only for requested range
+Generate occurrences in memory
+
+Case 3: Recurring Event with Exception (One Cancellation)
+
+Example
+
+Team Sync
+Cancelled only on Jan 20
+
+
+event_exceptions` table
+
+| exception_id | event_id | exception_date | type      |
+| ------------ | -------- | -------------- | --------- |
+| ex_301       | evt_201  | 2025-01-20     | CANCELLED |
+
+
+GET Behavior (Week of Jan 20)
+
+Expand weekly rule → Jan 20 occurrence
+Match exception → drop occurrence
+Return remaining events
+Why This Storage Model Scales
+Scenario	Rows Stored
+One-time event	1
+Weekly for years	1
+Weekly + N exceptions	1 + N
+
+✅ Minimal storage
+✅ Fast queries
+✅ No occurrence explosion
+
+2. View generation and low latency
+
+User flow :
+- Client fetch data from server.
+- Server fetch data from DB.
+- Server expands events for a time range
+
+Server send list of events to client
+
+Optimisation for low latency to get result :
+
+Redis cache : Server can push the events to Redis. When user wants to see the events in couple of hours, it made request to server. server first look into redis and serve. If events are not present , then server made call to DB, fetch events from DB and push to client and redis.
+
+Pros :
+- Simple client - no extra logic on client side.
+- Consistent shared views
+
+Cons
+- Redis explosion at scale
+- Hard cache invalidation
+- Per-user views don’t reuse well
+- Expensive at 1B users
+
+Conclusion:
+❌ Not ideal for massive scale.
+
+Client side expansion + SQLite (Hybrid)
+
+User Flow
+- User made request to Server.
+- Server sends events rules , exceptions to client.
+- Client expands events to multiple events
+- Client saves occurrences into SQL lite DB.
+
+Pros
+- Extremely fast UI
+- Offline support
+- No server-side expanded cache
+- Scales naturally with users
+
+Cons
+- More complex client
+- Server must manage sync carefully
+
+Conclusion:
+✅ Preferred at very large scale.
+
+3. Conflict Detection and Locking Strategy
+
+Optimistic Locking (Default)
+
+low contention
+best of personal calendar
+retry logic should be there in service.
+
+Pessimistic Locking
+
+High contention calendars to avoid race condition.
+Lock many rows.
+
+4. Multi-Device Sync ( push and pull)
+
+Pull (Delta Sync) Used for:
+Cold start
+Reconnect
+Missed updates
+
+Push (SSE / Push Notifications)
+
+Fetches updated rule
+Re-expands locally
+Updates SQLite + UI
+
+SSE preferred:
+
+One-way
+Lightweight
+Battery friendly
+
+Hybrid model -> Push for freshness, pull for correctness.
+
+5. Database Choice: SQL vs NoSQL
+
+Why SQL works well:
+- Strong consistency
+- Transactions
+- Overlap queries
+- Recurrence rules stored efficiently
+
+This is not write-heavy, so SQL scales well.
+
+No SQL tradeoffs
+
+Issue	Explanation
+Conflict checks	Hard without transactions
+Recurrence queries	Poor fit
+Consistency	Eventual by default.
+Complexity	Higher for correctness
+----------------------------------------
+Title: The Unwritten Rubric: Why Senior Engineers Fail "Google SRE" Interviews
+Date: 2025-12-17T09:30:35Z
+Link: https://dev.to/aceinterviews/the-unwritten-rubric-why-senior-engineers-fail-google-sre-interviews-2467
+Details:
+There is a specific type of candidate failure that happens constantly in Google SRE loops.
+
+The candidate is a Senior Staff Engineer. They know Kubernetes internals. They have managed incidents during Black Friday. They nail the coding question.
+
+Verdict: No Hire.
+
+The candidate leaves confused. The feedback is vague ("not enough depth").
+
+But inside the hiring committee, the reason is specific, structural, and documented. The candidate failed because they treated the interview as a Technical Test instead of an Operational Simulation.
+
+I’ve spent months deconstructing these failure modes. Below is the "Internal Rubric" — the signals interviewers are actually looking for while you are busy trying to get the right answer.
+
+1. The NALSD "Physics" Trap
+Public Perception: "NALSD (Non-Abstract Large System Design) is just System Design with harder constraints."
+Internal Reality: NALSD is a test of supply chain logistics, not software architecture.
+
+In a standard design round, you draw a "Distributed Storage Service" box. In NALSD, that box is a liability.
+
+The Hidden Rubric:
+
+The Resource Cap: We are looking for the moment you realize you cannot solve the problem with software. If the prompt asks for 99.99% availability but gives you a budget of 500 HDDs with a 2% annualized failure rate, writing "Erasure Coding" on the board is a fail. Doing the math to prove it’s impossible is the pass.
+The Bandwidth Wall: Most candidates ignore the speed of light. If you propose replicating 5PB of data for disaster recovery, and you don't immediately calculate that it will take 45 days over a 10Gbps link, you fail.
+
+The Signal: We don't hire Architects who draw clouds. We hire Custodians who count watts, rack units, and fiber capacity.
+
+✅ Success Step: Stop drawing. Start calculating.
+
+2. The Troubleshooting "Hero" Anti-Pattern
+Public Perception: "I need to find the root cause to pass the interview."
+Internal Reality: Finding the root cause too quickly is often a negative signal.
+
+We see candidates immediately jump to grep error /var/log/syslog. This mimics how developers debug code, not how SREs manage outages.
+
+The Hidden Rubric:
+
+Mitigation > Resolution: The rubric explicitly scores "Time to Mitigation." If you spend 20 minutes finding the bug but 0 minutes draining traffic to a healthy region, you are dangerous to production.
+The "One-Change" Rule: Junior candidates change two variables at once (e.g., "I'll restart the server AND clear the cache"). This is an automatic red flag. It destroys observability.
+
+The Signal: The interview isn't testing if you can fix the server. It’s testing if you can stop the bleeding without understanding why it’s bleeding.
+
+✅ Success Step: Verbalize your OODA Loop. "I see high latency. I am not investigating why yet. I am prioritizing a rollback to the last known good state."
+
+3. The "Black Box" Observability Filter
+Public Perception: "I'll check the dashboards and metrics."
+Internal Reality: Post-2024, "metrics" are considered lagging indicators. We are testing for Kernel Intuition.
+
+Modern failures often happen between the metrics. A CPU reporting 50% usage might be stalling on I/O wait. A "healthy" container might be dropping packets due to a conntrack table overflow.
+
+The Hidden Rubric:
+
+Syscall Fluency: If you can't explain how you would verify a process is stuck (e.g., strace, checking /proc/pid/stack, or eBPF), you are capped at L4.
+The "Ghost" Failure: We love giving scenarios where the logs are clean. Candidates who rely on logs freeze. Candidates who understand Linux internals look for resource contention (file descriptors, inodes, ephemeral ports).
+
+✅ Success Step: Don't say "I'll check CPU." Say "I'll check for processes in D-state (Uninterruptible Sleep) to rule out disk contention."
+
+4. The "False Certainty" Penalty
+Public Perception: "I need to sound confident."
+Internal Reality: Confidence without data is a liability.
+
+Google SRE culture is built on "Blamelessness" and "Epistemic Humility." A candidate who guesses and is right is scored lower than a candidate who admits ignorance and builds a hypothesis.
+
+The Hidden Rubric:
+
+Hypothesis Invalidation: We watch to see if you try to prove yourself right or prove yourself wrong. SREs try to prove themselves wrong.
+The "I Don't Know" Bonus: If you reach a dead end, saying "I don't know the specific command, but I know I need to inspect the TCP window size" is a valid answer. Bluffing is an immediate fail.
+5. The Coding "Scripting" Nuance
+Public Perception: "It's just LeetCode Easy."
+Internal Reality: It is Text Processing under Constraints.
+
+We don't care about dynamic programming. We care about:
+
+Input sanitization: (Do you crash on empty lines?)
+Memory constraints: (Did you load the whole 100GB log file into RAM?)
+Readability: (Can an on-call engineer understand this script at 3 AM?)
+
+The Signal: If you write a complex one-liner regex that is hard to debug, you lose points. If you write verbose, defensive code that handles errors gracefully, you gain points.
+
+Summary: The Mental Shift
+
+To pass the loop, you must shift your identity:
+
+Developer Identity: "I build features. I fix bugs. I optimize code."
+Google SRE Identity: "I manage risk. I mitigate impact. I manage scarcity."
+
+The interview is a simulation of the latter.
+
+A Note on Preparation:
+Most prep material focuses on "Knowledge Acquisition" (learning more things). The Google SRE loop tests "Execution Sequencing" (doing known things in the right order).
+
+I spent the last 6 months building the Complete Google SRE Career Launchpad to specifically train this "Sequencing" muscle—because reading about it isn't the same as doing it. But whether you use that or not, simply slowing down and prioritizing math over magic will double your pass rate.
+
+🚀 Here are two Ways to Prepare
+
+I realized that while there are thousands of coding guides, there was no single "source of truth" for the Operational & Architectural side of the Google SRE interview. So I built two resources:
+
+1. The Open Source Handbook (Free)
+
+I’ve open-sourced my core mental models, the NALS diagnostic flowchart, and the Linux command cheat sheet.
+👉 Star the Repository on GitHub
+
+2. The Complete Career Launchpad (For Serious Candidates)
+
+If you want the full end-to-end system—including 70+ production-grade coding drills, the Offer Negotiation Playbook, and Mock Interview Simulations—I’ve packaged my entire personal study system into a comprehensive bundle.
+👉 Get the Complete Google SRE Career Launchpad
+
+(Note: The bundle also includes the "First 90 Days" survival guide for once you land the job).
+
+Good luck with the loop. Stop guessing, start architecting.*
+----------------------------------------
+Title: The 5-Minute System Design Question Most Engineers Get Wrong
+Date: 2025-12-11T10:21:06Z
+Link: https://dev.to/social_interviewbee/the-5-minute-system-design-question-most-engineers-get-wrong-49fb
+Details:
+There's a system design question that keeps showing up in interviews at Google, Amazon, Meta, and pretty much every tech company:
+
+"Design a basic chat message system that allows users to send and receive messages in real-time. You have 5 minutes."
+
+Sounds straightforward. But data from tech hiring shows around 73% of engineers struggle with it—not because it's technically hard, but because they approach it the wrong way.
+
+The Two Mistakes Everyone Makes
+
+Jumping Straight Into Implementation
+
+Most candidates hear "chat system" and immediately start talking about WebSockets, Redis, or database schemas.
+
+The problem? They haven't asked basic questions first:
+
+Is this for 100 users or 100,000?
+One-on-one chat or group rooms?
+Do messages need to persist, or can they disappear?
+
+A chat system for 100 concurrent users is a weekend project. For 100,000 users, you need horizontal scaling, message queues, and load balancers. Without knowing the scale, you're designing blind.
+
+Focusing on One Component
+
+Engineers often spend the entire 5 minutes on database design while completely ignoring:
+
+
+Components that actually matter in a chat system:
+├── WebSocket connections (real-time delivery)
+├── Message storage (what happens when users are offline?)
+├── User presence tracking (who's online?)
+├── Delivery confirmation (did the message arrive?)
+└── Connection management (handling disconnects)
+
+
+Chat systems are fundamentally about real-time communication and connection management - not just storing data.
+
+The Framework That Works
+
+Here's a breakdown that consistently helps candidates pass:
+
+Minute 1 - Clarify Requirements
+Ask about scale, features, and constraints before touching anything.
+
+Minutes 2-3 - Draw High-Level Components
+
+
+┌─────────────┐     ┌─────────────┐     ┌─────────────────┐
+│ Client Apps │────▶│ Chat Server │────▶│ Message Database│
+└─────────────┘     └─────────────┘     └─────────────────┘
+                           │
+                    ┌──────┴──────┐
+                    ▼             ▼
+            ┌───────────┐  ┌─────────────┐
+            │Connection │  │  Message    │
+            │ Manager   │  │   Queue     │
+            └───────────┘  └─────────────┘
+
+
+Briefly explain each: client apps, chat server for routing, database for history, connection manager for presence, message queue for reliability.
+
+Minutes 4-5 - Address the Hard Parts
+
+Message ordering with multiple servers
+Handling reconnection and missed messages
+Scaling WebSocket connections across servers
+
+What Interviewers Actually Want
+
+Testing For	NOT Testing For
+Thinking through distributed systems	Memorizing specific technologies
+Asking clarifying questions	Having one "correct" answer
+Communicating trade-offs	Writing perfect code
+Staying organized under pressure	Speed
+
+The point isn't to design WhatsApp in 5 minutes. It's to show you can break down an open-ended problem systematically.
+
+Quick Reference
+
+
+const systemDesignFramework = {
+  minute_1: "Clarify - scale, features, constraints",
+  minute_2: "Draw - clients, servers, storage",
+  minute_3: "Trace - how data flows through",
+  minute_4: "Identify - scaling challenges, failure points",
+  minute_5: "Trade-offs - what you'd prioritize and why"
+};
+
+
+Read the Full Guide
+
+This is a condensed version. The full breakdown covers:
+
+Detailed component explanations
+Common follow-up questions interviewers ask
+How to handle curveball variations
+Practice tips that actually help
+
+👉 Read the complete System Design Interview Guide on InterviewBee
+
+
+What system design questions have you faced in interviews? Always curious what variations companies are throwing at candidates these days.
+----------------------------------------

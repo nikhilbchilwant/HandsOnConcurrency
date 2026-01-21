@@ -117,16 +117,18 @@ public class DiningPhilosophers {
         int rightFork = (philosopherId + 1) % numPhilosophers;
         
         // TODO: Determine which fork to pick up first (lower numbered)
-        int firstFork = Math.min(leftFork, rightFork);
-        int secondFork = Math.max(leftFork, rightFork);
+        // 💡 HINT: Use Math.min() and Math.max() for resource hierarchy
+        // int firstFork = Math.min(leftFork, rightFork);
+        // int secondFork = Math.max(leftFork, rightFork);
+
+        // TODO: Acquire forks in order using nested synchronized blocks
+        // synchronized (forks[firstFork]) {
+        // synchronized (forks[secondFork]) {
+        // doEat(philosopherId);
+        // }
+        // }
         
-        // TODO: Acquire forks in order, eat, then release
-        synchronized (forks[firstFork]) {
-            synchronized (forks[secondFork]) {
-                // Eating - in real code, do some work here
-                doEat(philosopherId);
-            }
-        }
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     private void doEat(int philosopherId) {

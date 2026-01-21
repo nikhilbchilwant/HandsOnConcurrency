@@ -83,6 +83,8 @@ public class EvenOddPrinter {
         // Step 4: Increment current
         // Step 5: Set isOddTurn = false
         // Step 6: notifyAll() to wake even thread
+
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
@@ -95,6 +97,8 @@ public class EvenOddPrinter {
         // Same pattern as printOdd() but:
         // - Wait while isOddTurn is TRUE
         // - After printing, set isOddTurn = true
+
+        throw new UnsupportedOperationException("TODO: Implement this method");
     }
     
     /**
