@@ -15,14 +15,17 @@ By completing this module, you will understand:
 
 ## Labs
 
-| Lab | Topic | Key Concepts |
-|-----|-------|--------------|
-| **lab05** | ReentrantLock | Lock/unlock, tryLock, fairness |
-| **lab06** | ReadWriteLock | Read vs write locks, lock upgrading |
-| **lab07** | Atomic Classes | CAS operations, AtomicInteger |
-| **lab08** | Counter Comparison | Synchronized vs Lock vs Atomic |
-| **lab09** | ConcurrentHashMap | Thread-safe map, compute methods |
-| **lab10** | BlockingQueue | Producer-consumer pattern |
+| Lab | Topic | Key Concepts | JCiP Reference |
+|-----|-------|--------------|----------------|
+| **lab05** | ReentrantLock | Lock/unlock, tryLock, fairness | Ch 13.1 (ReentrantLock) |
+| **lab06** | ReadWriteLock | Read vs write locks | Ch 13.5 (Read-Write Locks) |
+| **lab07** | Atomic Classes | CAS operations, AtomicInteger | Ch 15 (Atomics/CAS) |
+| **lab08** | Counter Comparison | Synchronized vs Lock vs Atomic | Ch 15.3 (Atomic vs Locks) |
+| **lab09** | ConcurrentHashMap | Thread-safe map, compute methods | Ch 5.2 (Concurrent Collections) |
+| **lab10** | BlockingQueue | Producer-consumer pattern | Ch 5.3 (Blocking Queues) |
+| **lab11** | Synchronizers | CountDownLatch, Semaphore | Ch 5.5 (Synchronizers) |
+| **lab12** | Modern Locks | StampedLock, Optimistic Reading | Ch 13 (Explicit Locks Extension) |
+| **lab13** | Lock Striping | Performance, reduced lock contention | Ch 11.4 (Performance Optimization) |
 
 ## How to Practice
 

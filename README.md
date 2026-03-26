@@ -19,6 +19,25 @@ This repo follows a **practice-first** approach:
 
 ---
 
+## JCiP Chapter Mapping
+
+This repository is designed to be a companion to **"Java Concurrency in Practice" (JCiP)**, modernized for **Java 17+**.
+
+| Module | JCiP Chapters | Modern Focus |
+|--------|---------------|--------------|
+| **01: Foundations** | Ch 2, 3, 4, 16 | Records, Sealed Classes, JMM |
+| **02: Locks/Atomics** | Ch 5, 13, 15 | StampedLock, Synchronizers |
+| **03: Executors/Async**| Ch 6, 8 | CompletableFuture, Fork/Join |
+| **04: Liveness/Prod** | Ch 7, 10 | Shutdown Hooks, Thread Dumps |
+| **05: Testing** | Ch 12 | Stress Tests, Correctness |
+| **06: Classic Problems**| Part I & IV | Interview Patterns |
+| **07: Capstone** | Part II & III | System Design |
+| **08: LLD + Concurrency**| Part II | Object Composition |
+| **09: Debugging** | Ch 10, 11 | Anti-patterns |
+| **10: Evolution** | Ch 15 | CAS, Lock-free vs Locking |
+
+---
+
 ## Prerequisites
 
 - Java 17+

@@ -300,4 +300,38 @@ if (instance == null) {
 
 ---
 
-*Document prepared for code generation. Next step: Generate module-debug with broken implementations.*
+## Part 8: Modernizing JCiP for Java 17
+
+> "Java Concurrency in Practice" is the bible of concurrency, but it was written for Java 5/6. Here is how to map its core lessons to Java 17+.
+
+### 1. Immutability & Safe Publication (JCiP Ch 3)
+- **Old Way:** Manually creating immutable classes with `private final` fields and explicit constructors.
+- **Modern Way:** Use **Java 17 Records**. They are final by default, fields are final, and they provide safe publication through their canonical constructor.
+- **Lab:** `module1-foundations/lab06`
+
+### 2. State Management (JCiP Ch 4)
+- **Old Way:** Using `int` constants or `enums` with complex state transitions.
+- **Modern Way:** Use **Sealed Classes** and **Switch Expressions**. This provides compile-time exhaustiveness checks and cleaner concurrent state machine logic.
+- **Lab:** `module1-foundations/lab07`
+
+### 3. Read-Heavy Optimization (JCiP Ch 13)
+- **Old Way:** `ReentrantReadWriteLock`.
+- **Modern Way:** **StampedLock**. It provides "optimistic reading" which can significantly outperform RWLock by avoiding lock acquisition for reads unless a write actually occurs.
+- **Lab:** `module2-locks-atomics/lab12`
+
+### 4. Annotation-Driven Documentation
+- Use JCiP-style annotations to document your intent during interviews.
+- `@ThreadSafe`, `@NotThreadSafe`, `@GuardedBy("lock")`
+- **Location:** `com.concurrency.annotations`
+
+---
+
+## Part 9: Implementation Status
+
+| Module | Status | JCiP/Java 17 Focus |
+|--------|--------|--------------------|
+| `module1-foundations` | ✅ Updated | Records, Sealed Classes, JCiP Annotations |
+| `module2-locks-atomics` | ✅ Updated | Synchronizers (Latch, Semaphore), StampedLock |
+| `module9-debug` | ✅ Exists | Common bug patterns (wait/notify, visibility) |
+| `module10-evolution` | ✅ Exists | Evolution from simple to optimized (CAS/Atomic) |
+

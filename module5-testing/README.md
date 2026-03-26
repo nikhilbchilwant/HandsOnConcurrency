@@ -14,11 +14,11 @@ By completing this module, you will understand:
 
 ## Labs
 
-| Lab | Topic | Key Concepts |
-|-----|-------|--------------|
-| **lab18** | Stress Testing | High contention, load testing |
-| **lab19** | Race Detection | Thread sanitizers, assertions |
-| **lab20** | Deterministic Testing | Controlled scheduling |
+| Lab | Topic | Key Concepts | JCiP Reference |
+|-----|-------|--------------|----------------|
+| **lab18** | Stress Testing | High contention, load testing | Ch 12.1 (Testing for Correctness) |
+| **lab19** | Race Detection | Thread sanitizers, assertions | Ch 12.1.2 (Resource Management) |
+| **lab20** | Deterministic Testing | Controlled scheduling | Ch 12.2 (Testing for Performance) |
 
 ## How to Practice
 

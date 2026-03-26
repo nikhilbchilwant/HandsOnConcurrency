@@ -32,8 +32,8 @@
         <module>module8-lld-concurrency</module>   <!-- LLD+Concurrency: Booking, Parking, PubSub -->
         
         <!-- Interview Practice Modules -->
-        <module>module9-debug</module>             <!-- 🔴 Broken code for debugging practice -->
-        <module>module10-evolution</module>        <!-- 📈 Progressive: simple → concurrent → optimized -->
+        <module>module9-debug</module>             <!-- Broken code for debugging practice -->
+        <module>module10-evolution</module>        <!-- Progressive: simple to concurrent to optimized -->
     </modules>
 
     <dependencyManagement>

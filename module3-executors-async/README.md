@@ -14,13 +14,13 @@ By completing this module, you will understand:
 
 ## Labs
 
-| Lab | Topic | Key Concepts |
-|-----|-------|--------------|
-| **lab11** | ExecutorService | Fixed, cached, scheduled pools |
-| **lab12** | CompletableFuture | thenApply, thenCompose, exceptionally |
-| **lab13** | Fork/Join | RecursiveTask, work-stealing |
-| **lab14** | Parallel Streams | When to use, pitfalls |
-| **lab21** | Fan-Out/Fan-In | Scatter-gather pattern |
+| Lab | Topic | Key Concepts | JCiP Reference |
+|-----|-------|--------------|----------------|
+| **lab11** | ExecutorService | Fixed, cached, scheduled pools | Ch 6 (Task Execution) |
+| **lab12** | CompletableFuture | thenApply, thenCompose, exceptionally | Ch 6.3 (CompletionService Extension) |
+| **lab13** | Fork/Join | RecursiveTask, work-stealing | Ch 8.1 (Thread Pool Sizing) |
+| **lab14** | Parallel Streams | When to use, pitfalls | Ch 11.2 (Scalability) |
+| **lab21** | Fan-Out/Fan-In | Scatter-gather pattern | Ch 6.2 (Executor framework) |
 
 ## How to Practice
 

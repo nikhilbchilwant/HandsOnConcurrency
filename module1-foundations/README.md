@@ -16,13 +16,15 @@ By completing this module, you will understand:
 
 ## Labs
 
-| Lab | Topic | Key Concepts |
-|-----|-------|--------------|
-| **lab01** | Race Condition Demo | Shared mutable state, data races |
-| **lab02** | Visibility Problem | volatile, memory barriers |
-| **lab03** | Wait/Notify Basics | Guarded blocks, spurious wakeups |
-| **lab04** | Happens-Before | JMM ordering guarantees |
-| **lab22** | ThreadLocal | Thread-isolated state, cleanup |
+| Lab | Topic | Key Concepts | JCiP Reference |
+|-----|-------|--------------|----------------|
+| **lab01** | Race Condition Demo | Shared mutable state, data races | Ch 2.2 (Race Conditions) |
+| **lab02** | Visibility Problem | volatile, memory barriers | Ch 3.1 (Visibility) |
+| **lab03** | Wait/Notify Basics | Guarded blocks, spurious wakeups | Ch 14.2 (Condition Queues) |
+| **lab04** | Happens-Before | JMM ordering guarantees | Ch 16 (Java Memory Model) |
+| **lab06** | Record Delegation | Immutability, thread-safety delegation | Ch 3.4 (Immutability), Ch 4.3 (Delegation) |
+| **lab07** | Sealed States | Concurrent state machines | Ch 4.1 (Confinement) |
+| **lab22** | ThreadLocal | Thread-isolated state, cleanup | Ch 3.3 (Thread Confinement) |
 
 ## How to Practice
 

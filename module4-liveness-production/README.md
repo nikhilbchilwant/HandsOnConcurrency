@@ -14,11 +14,11 @@ By completing this module, you will understand:
 
 ## Labs
 
-| Lab | Topic | Key Concepts |
-|-----|-------|--------------|
-| **lab15** | Deadlock Detection | Lock ordering, cycle detection |
-| **lab16** | Graceful Shutdown | Shutdown hooks, interrupt handling |
-| **lab17** | Thread Dump Analysis | jstack, finding blocked threads |
+| Lab | Topic | Key Concepts | JCiP Reference |
+|-----|-------|--------------|----------------|
+| **lab15** | Deadlock Detection | Lock ordering, cycle detection | Ch 10.1 (Deadlock) |
+| **lab16** | Graceful Shutdown | Shutdown hooks, interrupt handling | Ch 7 (Cancellation and Shutdown) |
+| **lab17** | Thread Dump Analysis | jstack, finding blocked threads | Ch 10.1.5 (Thread Dumps) |
 
 ## How to Practice
 

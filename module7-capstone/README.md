@@ -13,11 +13,11 @@ By completing this module, you will:
 
 ## Projects
 
-| Project | Description | Concepts Integrated |
-|---------|-------------|---------------------|
-| **Pipeline** | Multi-stage data processing pipeline | BlockingQueue, ExecutorService, backpressure |
-| **Orchestrator** | Task orchestration with dependencies | CompletableFuture, DAG scheduling |
-| **Scheduler** | Full-featured task scheduler | PriorityQueue, timed execution, cancellation |
+| Project | Description | JCiP Reference |
+|---------|-------------|----------------|
+| **Pipeline** | Multi-stage data processing pipeline | Ch 5.3 (Producer-Consumer) |
+| **Orchestrator** | Task orchestration with dependencies | Ch 6, 8 (Executors/Pools) |
+| **Scheduler** | Full-featured task scheduler | Ch 6 (Task Execution) |
 
 ## How to Practice
 

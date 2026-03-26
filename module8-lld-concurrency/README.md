@@ -14,11 +14,11 @@ By completing this module, you will:
 
 ## Problems
 
-| Problem | Concurrency Challenge | Similar To |
-|---------|----------------------|------------|
-| **Seat Booking System** | Prevent double-booking with CAS | BookMyShow, movie tickets |
-| **Parking Lot** | Multiple gates, atomic spot allocation | Classic LLD problem |
-| **Pub-Sub System** | Concurrent publishers and subscribers | Mini-Kafka, event systems |
+| Problem | Concurrency Challenge | JCiP Reference |
+|---------|----------------------|----------------|
+| **Seat Booking System** | Prevent double-booking with CAS | Ch 15 (Atomics/CAS) |
+| **Parking Lot** | Multiple gates, atomic spot allocation | Ch 4 (Composing Objects) |
+| **Pub-Sub System** | Concurrent publishers and subscribers | Ch 5.3 (Blocking Queues) |
 
 ## How to Practice
 

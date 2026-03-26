@@ -13,4 +13,12 @@
     <artifactId>module2-locks-atomics</artifactId>
     <name>Module 2: Locks, Atomics, and Concurrent Collections</name>
     <description>ReentrantLock, ReadWriteLock, Atomics, ConcurrentHashMap, BlockingQueues</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.concurrency.labs</groupId>
+            <artifactId>module1-foundations</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>

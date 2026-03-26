@@ -32,36 +32,37 @@ module6-classic-problems/
 
 ### 🔴 Tier 1: Core Locking (MUST MASTER)
 
-| Problem | Key Concepts | Companies |
-|---------|--------------|-----------|
-| **BoundedBlockingQueue** | wait/notify, guarded blocks | Rubrik, Amazon, Dropbox |
-| **SimpleReadWriteLock** | Reader-writer synchronization | LinkedIn, Microsoft |
-| **DiningPhilosophers** | Deadlock prevention | Google, Meta |
+| Problem | Key Concepts | JCiP Reference |
+|---------|--------------|----------------|
+| **BoundedBlockingQueue** | wait/notify, guarded blocks | Ch 14 (Condition Queues) |
+| **SimpleReadWriteLock** | Reader-writer synchronization | Ch 13.5 (Read-Write Locks) |
+| **DiningPhilosophers** | Deadlock prevention | Ch 10.1 (Deadlock) |
+| **UnisexBathroom** | Group exclusion, starvation prevention | Ch 14 (Condition Queues) |
 
 ### 🟠 Tier 2: Thread Coordination
 
-| Problem | Key Concepts | Companies |
-|---------|--------------|-----------|
-| **PrintInOrder** | Semaphores, condition variables | Amazon, Microsoft |
-| **EvenOddPrinter** | Turn-based coordination | Goldman Sachs, Flipkart |
+| Problem | Key Concepts | JCiP Reference |
+|---------|--------------|----------------|
+| **PrintInOrder** | Semaphores, condition variables | Ch 5.5 (Synchronizers) |
+| **EvenOddPrinter** | Turn-based coordination | Ch 14.2 (Condition Queues) |
 
 ### 🟡 Tier 3: System Components (SDE2 Sweet Spot)
 
-| Problem | Key Concepts | Companies |
-|---------|--------------|-----------|
-| **TokenBucketRateLimiter** | Lazy refill, time management | Stripe, Cloudflare |
-| **SimpleThreadPool** | Worker threads, task queue | Uber, Amazon |
-| **DelayedTaskScheduler** | PriorityQueue, timed waiting | Oracle, PayPal |
-| **ConcurrentLRUCache** | Fine-grained locking | Meta, Netflix |
-| **ConcurrentMessageQueue** | Visibility timeout, SQS-like | Amazon, Uber |
+| Problem | Key Concepts | JCiP Reference |
+|---------|--------------|----------------|
+| **TokenBucketRateLimiter** | Lazy refill, time management | Ch 11 (Performance) |
+| **SimpleThreadPool** | Worker threads, task queue | Ch 8 (Thread Pools) |
+| **DelayedTaskScheduler** | PriorityQueue, timed waiting | Ch 6 (Task Execution) |
+| **ConcurrentLRUCache** | Fine-grained locking | Ch 11.4 (Lock Striping) |
+| **ConcurrentMessageQueue** | Visibility timeout, SQS-like | Ch 5.3 (Blocking Queues) |
 
 ### 🟢 Tier 4: Java Specifics
 
-| Problem | Key Concepts | Companies |
-|---------|--------------|-----------|
-| **DCL Singleton** | Double-checked locking, volatile | Common everywhere |
-| **Holder Singleton** | Initialization-on-demand | Common everywhere |
-| **Enum Singleton** | Enum-based singleton | Common everywhere |
+| Problem | Key Concepts | JCiP Reference |
+|---------|--------------|----------------|
+| **DCL Singleton** | Double-checked locking, volatile | Ch 16.2.4 (Double-Checked) |
+| **Holder Singleton** | Initialization-on-demand | Ch 16.2.3 (Safe Publication) |
+| **Enum Singleton** | Enum-based singleton | Ch 16.2.3 (Safe Publication) |
 
 ## How to Practice
 
