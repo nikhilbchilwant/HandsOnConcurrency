@@ -7,6 +7,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * LLD Problem: Thread-Safe Parking Lot
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 💡 MOTIVATION: In a real parking garage, multiple cars might arrive     │
+ * │ at different gates simultaneously. A single counter that isn't          │
+ * │ thread-safe can lead to "over-filling" the lot.                         │
+ * │                                                                         │
+ * │ 🎯 PROBLEM: You need to design a system where multiple gates can        │
+ * │ concurrently park vehicles without exceeding the capacity or            │
+ * │ double-allocating a single spot.                                        │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ *
  * Scenario: Parking lot with multiple entry/exit gates operating concurrently.
  * 
  * Requirements:

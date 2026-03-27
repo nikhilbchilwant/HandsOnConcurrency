@@ -3,6 +3,16 @@ package com.concurrency.labs.lab02;
 /**
  * Lab 02: Visibility Bug Demonstration
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 💡 MOTIVATION: In modern systems, CPUs have multiple cores with local   │
+ * │ caches. To optimize performance, the JVM might not immediately write    │
+ * │ variable changes to main memory, or re-read them in every loop.         │
+ * │                                                                         │
+ * │ 🎯 PROBLEM: This class contains a "zombie thread" bug where a worker    │
+ * │ never sees a "stop" signal from another thread. You need to identify    │
+ * │ why the 'running' flag change isn't reaching the worker.                │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ *
  * This class demonstrates a visibility problem where one thread's
  * writes may not be visible to another thread.
  * 
