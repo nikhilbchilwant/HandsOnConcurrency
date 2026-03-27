@@ -7,6 +7,16 @@ import java.util.concurrent.atomic.AtomicReference;
 /**
  * LLD Problem: Concurrent Seat Booking System
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 💡 MOTIVATION: In high-demand scenarios like movie ticket booking       │
+ * │ or concert sales (e.g., Ticketmaster), thousands of users may           │
+ * │ try to book the exact same seat at the exact same time.                 │
+ * │                                                                         │
+ * │ 🎯 PROBLEM: You need to design a system that manages seat status and    │
+ * │ prevents double-booking while maintaining high performance. This        │
+ * │ requires atomic state transitions for individual seats.                 │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ *
  * Scenario: Movie theater with multiple shows, multiple users booking concurrently.
  * 
  * Requirements:

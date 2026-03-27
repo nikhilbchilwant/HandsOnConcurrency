@@ -3,6 +3,16 @@ package com.concurrency.labs.lab04;
 /**
  * Lab 04: Bounded Buffer with Wait/Notify
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 💡 MOTIVATION: Producer-consumer scenarios are everywhere. Consider a   │
+ * │ web server handling requests (producers) and processing them            │
+ * │ (consumers). If the buffer fills up, producers must wait.               │
+ * │                                                                         │
+ * │ 🎯 PROBLEM: You must implement a thread-safe buffer where threads       │
+ * │ "sleep" and "wake up" based on the state of the buffer (empty/full).    │
+ * │ The goal is to coordinate work without wasting CPU cycles.              │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ *
  * TODO: Implement a thread-safe bounded buffer using wait/notify.
  * 
  * 📝 NOTE: This is the classic Producer-Consumer pattern!

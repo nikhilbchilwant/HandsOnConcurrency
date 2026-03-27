@@ -5,6 +5,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Lab 01: Race Condition Fix - Atomic Counter
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 💡 MOTIVATION: In high-concurrency systems, synchronization using       │
+ * │ locks (synchronized) can lead to performance bottlenecks. Threads       │
+ * │ spend time waiting for locks, which is called "blocking."               │
+ * │                                                                         │
+ * │ 🎯 PROBLEM: You need to make this counter thread-safe WITHOUT using     │
+ * │ explicit locks. The goal is to achieve "lock-free" concurrency that     │
+ * │ allows multiple threads to proceed without being blocked.               │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ *
  * TODO: Fix the race condition using AtomicInteger.
  * 
  * 📝 NOTE: Atomic classes use Compare-And-Swap (CAS) operations at the hardware

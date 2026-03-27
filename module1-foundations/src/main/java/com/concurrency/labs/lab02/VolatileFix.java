@@ -3,6 +3,16 @@ package com.concurrency.labs.lab02;
 /**
  * Lab 02: Visibility Fix with Volatile
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 💡 MOTIVATION: To fix the "zombie thread" problem, we need a way to     │
+ * │ tell the JVM that a variable must be directly read/written to main      │
+ * │ memory, bypassing CPU local caches.                                     │
+ * │                                                                         │
+ * │ 🎯 PROBLEM: You need to establish a "happens-before" relationship       │
+ * │ between the stop() writer and the startWorker() reader without          │
+ * │ using expensive heavyweight locking.                                    │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ *
  * TODO: Fix the visibility bug using the volatile keyword.
  * 
  * 📝 NOTE: volatile guarantees:

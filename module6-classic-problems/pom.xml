@@ -13,4 +13,12 @@
     <artifactId>module6-classic-problems</artifactId>
     <name>Module 6: Classic Concurrency Interview Problems</name>
     <description>Priority-ordered interview problems by concurrency muscle</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.concurrency.labs</groupId>
+            <artifactId>module1-foundations</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>
