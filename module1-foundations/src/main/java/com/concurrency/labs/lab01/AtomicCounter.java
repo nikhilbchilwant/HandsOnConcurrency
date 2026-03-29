@@ -21,7 +21,7 @@ public class AtomicCounter {
     
     // TODO: Replace int with AtomicInteger
     // 🔑 HINT: AtomicInteger has methods like incrementAndGet(), getAndIncrement()
-    private int count = 0;
+    private final AtomicInteger count = new AtomicInteger(0);
     
     /**
      * TODO: Use AtomicInteger's atomic increment method.
@@ -31,11 +31,11 @@ public class AtomicCounter {
      */
     public void increment() {
         // TODO: Use atomic operation instead of count++
-        count++;
+        count.incrementAndGet();
     }
     
     public int getCount() {
         // TODO: Return the atomic value
-        return count;
+        return count.get();
     }
 }

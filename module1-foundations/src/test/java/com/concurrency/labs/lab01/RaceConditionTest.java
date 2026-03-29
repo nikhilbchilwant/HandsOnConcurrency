@@ -5,6 +5,7 @@ import org.junit.jupiter.api.RepeatedTest;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -29,7 +30,7 @@ class RaceConditionTest {
         
         ExecutorService executor = Executors.newFixedThreadPool(threads);
         CountDownLatch startLatch = new CountDownLatch(1);
-        CountDownLatch endLatch = new CountDownLatch(threads);
+        // CountDownLatch endLatch = new CountDownLatch(threads);
         
         for (int i = 0; i < threads; i++) {
             executor.submit(() -> {
@@ -40,14 +41,15 @@ class RaceConditionTest {
                     }
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
-                } finally {
+                } /** finally {
                     endLatch.countDown();
-                }
+                } **/
             });
         }
         
         startLatch.countDown(); // Start all threads
-        endLatch.await(); // Wait for all threads
+        // endLatch.await(); // Wait for all threads to finish their work
+        executor.awaitTermination(10, TimeUnit.SECONDS);
         executor.shutdown();
         
         int expected = threads * incrementsPerThread;

@@ -19,7 +19,7 @@ public class SynchronizedCounter {
     private int count = 0;
     
     // 🔑 HINT: Consider using a private lock object for better encapsulation
-    // private final Object lock = new Object();
+    private final Object lock = new Object();
     
     /**
      * TODO: Make this method thread-safe using synchronized.
@@ -28,17 +28,29 @@ public class SynchronizedCounter {
      */
     public void increment() {
         // TODO: Add synchronization here
-        count++;
+        synchronized(lock){
+            count++;
+        }
+        
     }
     
     /**
      * TODO: Should this method also be synchronized? Why or why not?
-     * 
+     * Yes. Reading from a shared variable needs synchronization just like writing to it.
+     *
      * 💡 THINK: What happens if increment() is synchronized but getCount() is not?
-     * 📝 NOTE: This relates to the concept of "visibility" in the Java Memory Model.
+     * If getCount() is not synchronized, a thread calling it might read a stale value of `count`
+     * from its local CPU cache, not the latest value written to main memory by a different thread
+     * that called increment(). This is a "visibility" problem.
+     *
+     * 📝 NOTE: Using `synchronized` in `getCount` establishes a "happens-before" relationship. It
+     * guarantees that the read operation will see all writes (like the one in `increment`) that
+     * occurred under the same lock, ensuring data consistency. This is a core part of the Java Memory Model.
      */
     public int getCount() {
         // TODO: Consider if synchronization is needed here
-        return count;
+        synchronized(lock){
+            return count;
+        }        
     }
 }

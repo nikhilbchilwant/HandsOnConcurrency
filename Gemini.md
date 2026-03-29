@@ -1,0 +1,1 @@
+Read README.md, AGENTS.md and understand the purpose and style of this repository. This repository is different than any other typical Java maven project.
