@@ -3,6 +3,18 @@ package com.concurrency.labs.lab01;
 /**
  * Lab 01: Race Condition Fix - Synchronized Counter
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 💡 MOTIVATION: In a concurrent system, multiple threads often share     │
+ * │ state. For example, an ad-click counter or a bank account balance.      │
+ * │ If two threads increment a counter simultaneously, one update might     │
+ * │ be lost because "count++" is not an atomic operation.                   │
+ * │                                                                         │
+ * │ 🎯 PROBLEM: This class is used in a multi-threaded environment where    │
+ * │ consistent results are required. You need to ensure that the increment  │
+ * │ operation is "atomic" - meaning only one thread can modify the value    │
+ * │ at a time.                                                              │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ *
  * TODO: Fix the race condition using the synchronized keyword.
  * 
  * 🔑 HINT: You can either:

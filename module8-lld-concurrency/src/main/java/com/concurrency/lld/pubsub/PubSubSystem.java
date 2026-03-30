@@ -11,6 +11,16 @@ import java.util.function.Consumer;
 /**
  * LLD Problem: Pub-Sub Message Queue (Mini-Kafka)
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 💡 MOTIVATION: In modern architecture, services often communicate       │
+ * │ through events. A "Pub-Sub" system decouples the producer and           │
+ * │ the consumer, allowing for more resilient and scalable systems.         │
+ * │                                                                         │
+ * │ 🎯 PROBLEM: You need to design a system where messages can be           │
+ * │ published to topics and delivered to multiple subscribers. The system   │
+ * │ must handle concurrent access from many threads.                        │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ *
  * Scenario: Event-driven system with topics, publishers, and subscribers.
  * 
  * Requirements:

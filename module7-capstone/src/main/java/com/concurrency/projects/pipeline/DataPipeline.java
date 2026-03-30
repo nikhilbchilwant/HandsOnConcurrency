@@ -6,6 +6,16 @@ import java.util.function.Function;
 /**
  * Project 1: Producer-Consumer Pipeline
  * 
+ * ┌─────────────────────────────────────────────────────────────────────────┐
+ * │ 💡 MOTIVATION: In modern data systems, processing is often split        │
+ * │ into stages (e.g., Log Ingestion -> Parsing -> Storage). A pipeline     │
+ * │ allows each stage to run concurrently, maximizing throughput.           │
+ * │                                                                         │
+ * │ 🎯 PROBLEM: You need to build a system where data flows through         │
+ * │ multiple workers. The main challenge is handling "backpressure" -       │
+ * │ ensuring a fast producer doesn't overwhelm a slow consumer.             │
+ * └─────────────────────────────────────────────────────────────────────────┘
+ *
  * TODO: Build a multi-stage data processing pipeline.
  * 
  * 📝 NOTE: This integrates:
