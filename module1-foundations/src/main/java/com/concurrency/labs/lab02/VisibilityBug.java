@@ -39,7 +39,9 @@ public class VisibilityBug {
      * effectively turning this into: if (running) { while(true) {...} }
      */
     public void startWorker() {
-        new Thread(() -> {
+        throw new UnsupportedOperationException("TODO");
+/*
+new Thread(() -> {
             int iterations = 0;
             // 💡 THINK: Why might this loop never terminate even after stop() is called?
             while (running) {
@@ -49,6 +51,7 @@ public class VisibilityBug {
             }
             System.out.println("Worker stopped after " + iterations + " iterations");
         }).start();
+*/
     }
     
     /**
@@ -57,10 +60,10 @@ public class VisibilityBug {
      * 📝 NOTE: This write might never be visible to the worker thread!
      */
     public void stop() {
-        running = false;
+        throw new UnsupportedOperationException("TODO");
     }
     
     public boolean isRunning() {
-        return running;
+        throw new UnsupportedOperationException("TODO");
     }
 }

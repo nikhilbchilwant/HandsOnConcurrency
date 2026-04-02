@@ -27,10 +27,10 @@ public class UnsafeCounter {
      * both increment to 6 and write... what's the final value?
      */
     public void increment() {
-        count++;
+        throw new UnsupportedOperationException("TODO");
     }
     
     public int getCount() {
-        return count;
+        throw new UnsupportedOperationException("TODO");
     }
 }

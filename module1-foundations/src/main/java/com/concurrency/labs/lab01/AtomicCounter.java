@@ -41,11 +41,11 @@ public class AtomicCounter {
      */
     public void increment() {
         // TODO: Use atomic operation instead of count++
-        count.incrementAndGet();
+        throw new UnsupportedOperationException("TODO");
     }
     
     public int getCount() {
         // TODO: Return the atomic value
-        return count.get();
+        throw new UnsupportedOperationException("TODO");
     }
 }

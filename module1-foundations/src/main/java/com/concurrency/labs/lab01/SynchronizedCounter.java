@@ -40,9 +40,7 @@ public class SynchronizedCounter {
      */
     public void increment() {
         // TODO: Add synchronization here
-        synchronized(lock){
-            count++;
-        }
+        throw new UnsupportedOperationException("TODO");
         
     }
     
@@ -61,8 +59,6 @@ public class SynchronizedCounter {
      */
     public int getCount() {
         // TODO: Consider if synchronization is needed here
-        synchronized(lock){
-            return count;
-        }        
+        throw new UnsupportedOperationException("TODO");
     }
 }

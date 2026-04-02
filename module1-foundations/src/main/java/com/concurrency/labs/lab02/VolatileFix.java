@@ -40,23 +40,26 @@ public class VolatileFix {
      * ensuring the worker sees the updated value promptly.
      */
     public void startWorker() {
-        new Thread(() -> {
+        throw new UnsupportedOperationException("TODO");
+/*
+new Thread(() -> {
             int iterations = 0;
             while (running) {
                 iterations++;
             }
             System.out.println("Worker stopped after " + iterations + " iterations");
         }).start();
+*/
     }
     
     /**
      * Stops the worker. With volatile, this write is immediately visible.
      */
     public void stop() {
-        running = false;
+        throw new UnsupportedOperationException("TODO");
     }
     
     public boolean isRunning() {
-        return running;
+        throw new UnsupportedOperationException("TODO");
     }
 }
